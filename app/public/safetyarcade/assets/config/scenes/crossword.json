@@ -1,0 +1,187 @@
+{
+	"elements" : [
+		{
+			"name" :  "bgRect",
+			"type" : "rect",
+			"width" : 1536,
+			"height" : 768,
+			"renderLayer" : "bg",
+			"x" : 0,
+			"y" : 0,
+			"color" : "#ffffff"
+		},
+		{
+			"name" : "activityInstructions", 
+			"type" : "group", 
+			"x" : "safeLeft+=25", 
+			"y" :  20, 
+			"responsive" : true,
+			"elements" : [
+				{ 
+					"name" : "activityTitle", 
+					"type" : "sprite", 
+					"asset" : "ActivityTitle", 
+					"x" : 0, 
+					"y" :  0, 
+					"interactive" : true
+				},
+				{ 
+					"name" : "activityInstruxText", 
+					"type" : "text", 
+					"text" : "Drag the correct number into the math equation for the answer.", 
+					"style" : {
+						"fontFamily" : ["BowlerHand", "Helvetica", "Arial"],
+						"fontSize": 24,
+						"fill": "#000000",
+						"wordWrap" : true,
+						"wordWrapWidth" : 320
+					},
+					"x" : 0, 
+					"y" :  80
+				}
+			]
+		},
+		{ 
+			"name" : "character",
+			"type" : "sprite", 
+			"asset" : "character",
+			"x" : "centerX+=70",
+			"y" : "safeBottom",
+			"anchorX" : 1,
+			"scaleX" : -1,
+			"renderLayer" : "ui"
+		},
+		{ 
+			"name" : "problemGroup",
+			"type" : "group", 
+			"x" : 0,
+			"y" : 0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "bubbleGroup",
+			"type" : "group", 
+			"x" : 0,
+			"y" : 0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "closeButton",
+			"type" : "sprite", 
+			"asset" : "close",
+			"x" : "right-=60",
+			"y" : "safeTop+=20",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "helpButton",
+			"type" : "sprite", 
+			"asset" : "help",
+			"x" : "right-=60",
+			"y" : "safeTop+=90",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "downloadButton",
+			"type" : "button", 
+			"up" : "download",
+			"over" : "download",
+			"down" : "download_down",
+			"x" : "right-=60",
+			"y" : "safeTop+=160",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true,
+			"visible": false
+		}
+	],
+	"interactions" : [
+		{ 
+			"object" : "closeButton" , 
+			"onPress" : "endActivity",
+			"args" : true
+		},
+		{ 
+			"object" : "helpButton" , 
+			"onPress" : "showHelpMenu",
+			"args" : true
+		},
+		{ 
+			"object" : "downloadButton" , 
+			"onPress" : "downloadActivity",
+			"args" : true
+		}
+	],
+	"questionData" : [
+		{
+			"question" : "How many days in advance should you call 811 before starting a digging project?",
+			"response" : "Right! Call 811 at least three days before starting a digging project.",
+			"answer" : 3,
+			"firstNumber" : 33,
+			"secondNumber" : 3,
+			"total" : 11,
+			"answerSpace" : 2,
+			"blankSpace" : 4,
+			"operator" : "divide"
+		},
+		{
+			"question" : "Number of different colored flags used to mark underground utilities before digging?",
+			"response" : "Right! Utilities place eight different colored flags on their underground lines to tell you areas to avoid.",
+			"answer" : 8,
+			"firstNumber" : 10,
+			"secondNumber" : 8,
+			"total" : 80,
+			"answerSpace" : 2,
+			"blankSpace" : 4,
+			"operator" : "multiply"
+		},
+		{
+			"question" : "Approximately how many hours should you wait for the utilities to be properly marked?",
+			"response" : "Right! You must wait approximately 48 hours for utility lines to be properly marked.",
+			"answer" : 48,
+			"firstNumber" : 12,
+			"secondNumber" : 4,
+			"total" : 48,
+			"answerSpace" : 4,
+			"blankSpace" : 0,
+			"operator" : "multiply"
+		},
+		{
+			"question" : "How many steps in the C.A.R.E. message?",
+			"response" : "Right! Remember to Call 811 before you dig, Allow the required time for free utility marking, Respect the marks and then Excavate carefully!",
+			"answer" : 4,
+			"firstNumber" : 10,
+			"secondNumber" : 4,
+			"total" : 6,
+			"answerSpace" : 2,
+			"blankSpace" : 4,
+			"operator" : "subtract"
+		},
+		{
+			"question" : "How many letters are in the word SAFETY?",
+			"response" : "Right! You're one step closer to becoming a safe digging champion!",
+			"answer" : 6,
+			"firstNumber" : 65,
+			"secondNumber" : 59,
+			"total" : 6,
+			"answerSpace" : 4,
+			"blankSpace" : 0,
+			"operator" : "subtract"
+		},
+		{
+			"question" : "How many hours a day can you submit an 811 ticket online?",
+			"response" : "Right! Homeowners can even submit a request online 24 hours a day, 7 days a week.",
+			"answer" : 24,
+			"firstNumber" : 4,
+			"secondNumber" : 24,
+			"total" : 28,
+			"answerSpace" : 2,
+			"blankSpace" : 0,
+			"operator" : "add"
+		}
+	]
+}

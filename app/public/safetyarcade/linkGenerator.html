@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>811 Custom Link Generator</title>
+	<meta name="description" content="">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<link rel="icon" href="./assets/favicons/cropped-android-chrome-512x512-32x32.png" sizes="32x32" />
+	<link rel="icon" href="./assets/favicons/cropped-android-chrome-512x512-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="./assets/favicons/cropped-android-chrome-512x512-180x180.png" />
+	<meta name="msapplication-TileImage" content="./assets/favicons/cropped-android-chrome-512x512-270x270.png" />
+	
+	<style type="text/css">
+		html, body {
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			margin: 0;
+		}
+	</style>
+
+
+	<script type="text/javascript">
+		var asset_path;
+
+		// Setting the asset path when on local development vs sesame servers. Add each development machine's internal IP address / port (MAMP) here. 
+		if (location.protocol === "http:" || location.protocol === "https:") {
+			var pathArray = location.pathname.split('/');
+			var dirPath = location.pathname;
+
+			if (pathArray[pathArray.length - 1] === "index.html") {
+				// drop direct html reference and replace with 
+				pathArray.pop();
+				dirPath = pathArray.join('/') + '/';
+			}
+
+			asset_path = location.protocol + "//" + location.host + dirPath;
+		} else {
+			asset_path = "./";
+		}
+
+		// set base URL path to use
+		document.write('<base href="' + asset_path + '" />');
+	</script>
+
+
+	<link rel="stylesheet" href="assets/css/main.min.css">
+
+	<!-- inject:scripts -->
+
+	<!-- endinject -->
+
+
+	<!-- GAME DATA -->
+	<script src="assets/js/vendors-app-teacher.js"></script>
+	<!-- inject:main -->
+	<script src="assets/js/app-teacher.js"></script>
+	<script src="assets/js/teacher.js"></script>
+	<!-- endinject -->
+
+</head>
+
+<body>
+	<header>
+		<div id="logo-lockup">
+			<img src="assets/images/site/811LogoTransparentSmall.png">
+			<h1>Link Generator</h1>
+		</div>
+	</header>
+
+	<section id="link-gen-container">
+		<form>
+			<div class="input-group">
+				<label for="schoolName">School Name</label>
+				<input type="text" name="schoolName" id="schoolName">
+			</div>
+			
+			<div class="input-group">
+				<label for="teacherName">Teacher Name</label>
+				<input type="text" name="teacherName" id="teacherName">
+			</div>
+			
+			<div class="input-group">
+				<label for="providerName">Local Distributor</label>
+				<select name="providerName" id="providerName">
+					<option value="None" disabled selected>-- Select Provider --</option>
+					<option value="ap">Alabama Power</option>
+					<option value="agl">Atlanta Gas Light</option>
+					<option value="cg">Chattanooga Gas</option>
+					<option value="gep">Georgia Power</option>
+					<option value="gup">Gulf Power</option>
+					<option value="mp">Mississippi Power</option>
+					<option value="ng">Nicor Gas</option>
+					<option value="ps">Power Secure</option>
+					<option value="sem">Sequent Energy Management</option>
+					<option value="scg">Southern Company Gas</option>
+					<option value="sp">Southern Power</option>
+					<option value="vng">Virginia Natural Gas</option>
+				</select>
+			</div>
+			
+			<div class="custom-link-group">
+				<label for="customLink">Your Custom Link</label>
+				<input type="text" name="customLink" id="customLink" readonly="readonly">
+				<button type="button" id="copyLink">Copy Link</button>
+			</div>
+		</form>
+	</section>
+
+	<footer>
+		
+	</footer>
+</body>
+
+</html>

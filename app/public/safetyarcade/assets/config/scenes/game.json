@@ -1,0 +1,29 @@
+{
+	"debug" : true,
+	"showGrid" : false,
+	"showSafeArea" : true,
+	"elements" : [
+		{ 
+			"name" : "bg",
+			"type" : "rect", 
+			"width" : 1320, 
+			"height" : 780, 
+			"x" : 0, 
+			"y" :  0,  
+			"color" : "#cccccc",
+			"renderLayer" : "bg"
+		},
+		{ 
+			"name" : "safeguide",  
+			"type" : "sprite", 
+			"asset": "safeguide", 
+			"x" : "centerX", 
+			"y" : "centerY", 
+			"interactive" : false,
+			"visible" : false
+		}
+	],
+	"interactions" : [
+		
+	]
+}

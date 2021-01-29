@@ -1,0 +1,192 @@
+{
+	"elements" : [
+		{
+			"name" :  "bgRect",
+			"type" : "rect",
+			"width" : 1536,
+			"height" : 768,
+			"renderLayer" : "bg",
+			"x" : 0,
+			"y" : 0,
+			"color" : "#ddeeff"
+		},
+		{
+			"name" : "applianceScene",
+			"type" : "group", 
+			"x" : 0, 
+			"y" :  0,
+			"interactive" : true,
+			"elements":[
+			{
+				"name" :  "groundRect1",
+				"type" : "rect",
+				"width" : 800,
+				"height" : 400,
+				"renderLayer" : "bg",
+				"x" : 0,
+				"y" : 760,
+				"color" : "#652517"
+			},
+			{
+				"name" :  "groundRect2",
+				"type" : "rect",
+				"width" : 800,
+				"height" : 400,
+				"renderLayer" : "bg",
+				"x" : 800,
+				"y" : 900,
+				"color" : "#652517"
+			},{"name":"bg_grass","type":"sprite","x":772.48,"y":832.29,"anchor":0.5,"asset":"ApplianceScene","frame":"bg_grass.png"},{"name":"bg_tree","type":"sprite","x":156.84,"y":358.98,"anchor":0.5,"asset":"ApplianceScene","frame":"bg_tree.png"},{"name":"house_basement","type":"sprite","x":857.92,"y":874.16,"anchor":0.5,"asset":"ApplianceScene","frame":"house_basement.png"},{"name":"house_floor1","type":"sprite","x":724.23,"y":659.58,"anchor":0.5,"asset":"ApplianceScene","frame":"house_floor1.png"},{"name":"house_floor2","type":"sprite","x":642.85,"y":303.1,"anchor":0.5,"asset":"ApplianceScene","frame":"house_floor2.png"},{"name":"house_attic","type":"sprite","x":662.29,"y":-30.3,"anchor":0.5,"asset":"ApplianceScene","frame":"house_attic.png"},{"name":"char_guitar","type":"sprite","x":971.18,"y":334.78,"anchor":0.5,"asset":"ApplianceScene","frame":"char_guitar.png"},{"name":"char_book","type":"sprite","x":477.36,"y":613.83,"anchor":0.5,"asset":"ApplianceScene","frame":"char_book.png"},{"name":"char_stripeshirt","type":"sprite","x":810.27,"y":940.34,"anchor":0.5,"asset":"ApplianceScene","frame":"char_stripeshirt.png"},{"name":"char_apron","type":"sprite","x":900.65,"y":611.17,"anchor":0.5,"asset":"ApplianceScene","frame":"char_apron.png"},{"name":"char_redhat","type":"sprite","x":1236.18,"y":610.33,"anchor":0.5,"asset":"ApplianceScene","frame":"char_redhat.png"},{"name":"appliance_furnace","type":"sprite","x":843.66,"y":47.66,"anchor":0.5,"asset":"ApplianceScene","frame":"appliance_furnace.png"},{"name":"appliance_poolheater","type":"sprite","x":1105.85,"y":851.61,"anchor":0.5,"asset":"ApplianceScene","frame":"appliance_poolheater.png"},{"name":"appliance_generator","type":"sprite","x":1212.24,"y":882.56,"anchor":0.5,"asset":"ApplianceScene","frame":"appliance_generator.png"},{"name":"appliance_fireplace","type":"sprite","x":360.92,"y":562.21,"anchor":0.5,"asset":"ApplianceScene","frame":"appliance_fireplace.png"},{"name":"appliance_grill","type":"sprite","x":1156.33,"y":629.57,"anchor":0.5,"asset":"ApplianceScene","frame":"appliance_grill.png"},{"name":"appliance_waterheater","type":"sprite","x":334.39,"y":935.67,"anchor":0.5,"asset":"ApplianceScene","frame":"appliance_waterheater.png"},{"name":"appliance_stove","type":"sprite","x":1009.92,"y":635.1,"anchor":0.5,"asset":"ApplianceScene","frame":"appliance_stove.png"},{"name":"appliance_refrigerator","type":"sprite","x":776.99,"y":589.01,"anchor":0.5,"asset":"ApplianceScene","frame":"appliance_refrigerator.png"},{"name":"appliance_dryer","type":"sprite","x":990.95,"y":975.25,"anchor":0.5,"asset":"ApplianceScene","frame":"appliance_dryer.png"}
+			]
+		},
+		{
+			"name" : "activityInstructions", 
+			"type" : "group", 
+			"group" : "applianceScene",
+			"x" : "left+=25", 
+			"y" :  -350, 
+			"responsive" : true,
+			"elements" : [
+				{ 
+					"name" : "activityTitle", 
+					"type" : "sprite", 
+					"asset" : "ActivityTitle", 
+					"x" : 0, 
+					"y" :  0, 
+					"interactive" : true
+				},
+				{ 
+					"name" : "activityInstruxText", 
+					"type" : "text", 
+					"text" : "Click on the appliances a home can use with natural gas.", 
+					"style" : {
+						"fontFamily" : ["BowlerHand", "Helvetica", "Arial"],
+						"fontSize": 24,
+						"fill": "#000000",
+						"wordWrap" : true,
+						"wordWrapWidth" : 280
+					},
+					"x" : 0, 
+					"y" :  80
+				}
+			]
+		},
+		{ 
+			"name" : "upButton",
+			"type" : "button", 
+			"up" : "arrow",
+			"over" : "arrow",
+			"down" : "arrow_down",
+			"x" : "centerX",
+			"y" : "safeTop+=60",
+			"anchor" : 0.5,
+			"interactive" : true
+		},
+		{ 
+			"name" : "downButton",
+			"type" : "button", 
+			"up" : "arrow",
+			"over" : "arrow",
+			"down" : "arrow_down",
+			"x" : "centerX",
+			"y" : "safeBottom-=60",
+			"rotation" : 180,
+			"anchor" : 0.5,
+			"interactive" : true
+		},
+		{ 
+			"name" : "closeButton",
+			"type" : "sprite", 
+			"asset" : "close",
+			"x" : "right-=60",
+			"y" : "safeTop+=20",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "helpButton",
+			"type" : "sprite", 
+			"asset" : "help",
+			"x" : "right-=60",
+			"y" : "safeTop+=90",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "downloadButton",
+			"type" : "button", 
+			"up" : "download",
+			"over" : "download",
+			"down" : "download_down",
+			"x" : "right-=60",
+			"y" : "safeTop+=160",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true,
+			"visible": false
+		}
+	],
+	"interactions" : [
+		{ 
+			"object" : "closeButton" , 
+			"onPress" : "endActivity",
+			"args" : true
+		},
+		{ 
+			"object" : "helpButton" , 
+			"onPress" : "showHelpMenu",
+			"args" : true
+		},
+		{ 
+			"object" : "upButton" , 
+			"onPress" : "moveSceneUp",
+			"args" : true
+		},
+		{ 
+			"object" : "downButton" , 
+			"onPress" : "moveSceneDown",
+			"args" : true
+		},
+		{ 
+			"object" : "downloadButton" , 
+			"onPress" : "downloadActivity",
+			"args" : true
+		}
+	],
+	"appliances" : [
+		{
+			"name" : "appliance_dryer",
+			"text" : "Dryer"
+		},
+		{
+			"name" : "appliance_fireplace",
+			"text" : "Fireplace"
+		},
+		{
+			"name" : "appliance_furnace",
+			"text" : "Furnace"
+		},
+		{
+			"name" : "appliance_generator",
+			"text" : "Generator"
+		},
+		{
+			"name" : "appliance_grill",
+			"text" : "Grill"
+		},
+		{
+			"name" : "appliance_stove",
+			"text" : "Stove"
+		},
+		{
+			"name" : "appliance_waterheater",
+			"text" : "Water Heater"
+		},
+		{
+			"name" : "appliance_poolheater",
+			"text" : "Pool Heater"
+		}
+	]
+}

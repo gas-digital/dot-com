@@ -1,0 +1,24 @@
+/* Content Boxes */
+.content-bubble-counter{
+    border-radius: 100%;
+    font-weight: 600;
+    height: 300px;
+    line-height: 290px !important;
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 300px;
+}
+
+.counter-bubble-content{
+	margin-top: 30px;
+}
+
+.content-bubble-wrapper a{
+    color: inherit;
+}
+
+.fusion-counters-box .counter-box-content{
+	.fusion-column-wrapper &{
+		text-align: left;
+	}
+}

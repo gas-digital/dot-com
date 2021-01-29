@@ -1,0 +1,54 @@
+[
+	{
+		"key" : "square",
+		"url" : "assets/images/global/WhiteSquare.png"
+	},
+	{
+		"key" : "ActivityTitle",
+		"url" : "assets/images/global/ActivityTitle.png"
+	},
+	{
+		"key" : "close",
+		"url" : "assets/images/global/close.png"
+	},
+	{
+		"key" : "help",
+		"url" : "assets/images/global/help.png"
+	},
+	{
+		"key" : "download",
+		"url" : "assets/images/global/button_download_up.png"
+	},
+	{
+		"key" : "download_down",
+		"url" : "assets/images/global/button_download_down.png"
+	},
+	{
+		"key" : "star",
+		"url" : "assets/images/global/star.png"
+	},
+	{
+		"key" : "character",
+		"url" : "assets/images/wordsearch/girl_magnifying.png"
+	},
+	{
+		"key" : "completionbadge",
+		"url" : "assets/images/global/youdidit_badge.png"
+	},
+	{
+		"key" : "excl_nicefind",
+		"url" : "assets/images/global/excl_nicefind.png"
+	},
+	{
+		"key" : "excl_supersleuth",
+		"url" : "assets/images/global/excl_supersleuth.png"
+	},
+	{
+		"key" : "excl_waytogo",
+		"url" : "assets/images/global/excl_waytogo.png"
+	},
+	{
+		"key" : "excl_yougotthis",
+		"url" : "assets/images/global/excl_yougotthis.png"
+	}
+]

@@ -1,0 +1,27 @@
+{
+	"elements" : [
+		{
+			"name" :  "bgRect",
+			"type" : "rect",
+			"width" : 1536,
+			"height" : 768,
+			"renderLayer" : "bg",
+			"x" : 0,
+			"y" : 0,
+			"color" : "#ffffff"
+		},
+		{ 
+			"name" : "logo",  
+			"type" : "sprite", 
+			"asset": "logo", 
+			"x" : "centerX", 
+			"y" : "centerY", 
+			"interactive" : true,
+			"renderLayer" : "bg",
+			"anchor" : 0.5
+		}
+	],
+	"interactions" : [
+		
+	]
+}

@@ -1,0 +1,70 @@
+[
+	{
+		"key" : "SniffyColoring",
+		"url" : "assets/images/coloring/SniffyColoring.json"
+	},
+	{
+		"key" : "ActivityTitle",
+		"url" : "assets/images/global/ActivityTitle.png"
+	},
+	{
+		"key" : "pencil_fill",
+		"url" : "assets/images/coloring/pencil_fill.png"
+	},
+	{
+		"key" : "pencil_outlines",
+		"url" : "assets/images/coloring/pencil_outlines.png"
+	},
+	{
+		"key" : "pencil_select",
+		"url" : "assets/images/coloring/pencil_select.png"
+	},
+	{
+		"key" : "tray",
+		"url" : "assets/images/coloring/tray.png"
+	},
+	{
+		"key" : "close",
+		"url" : "assets/images/global/close.png"
+	},
+	{
+		"key" : "help",
+		"url" : "assets/images/global/help.png"
+	},
+	{
+		"key" : "star",
+		"url" : "assets/images/global/star.png"
+	},
+	{
+		"key" : "done",
+		"url" : "assets/images/global/button_done_up.png"
+	},
+	{
+		"key" : "done_down",
+		"url" : "assets/images/global/button_done_down.png"
+	},
+	{
+		"key" : "download",
+		"url" : "assets/images/global/button_download_up.png"
+	},
+	{
+		"key" : "download_down",
+		"url" : "assets/images/global/button_download_down.png"
+	},
+	{
+		"key" : "completionbadge",
+		"url" : "assets/images/global/youdidit_badge.png"
+	},
+	{
+		"key" : "excl_awesome",
+		"url" : "assets/images/global/excl_awesome.png"
+	},
+	{
+		"key" : "excl_lookinggood",
+		"url" : "assets/images/global/excl_lookinggood.png"
+	},
+	{
+		"key" : "excl_oohlala",
+		"url" : "assets/images/global/excl_oohlala.png"
+	}
+]

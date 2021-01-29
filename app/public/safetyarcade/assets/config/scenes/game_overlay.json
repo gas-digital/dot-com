@@ -1,0 +1,59 @@
+{
+	"showGrid": false,
+	"elements": [
+		{
+			"name": "overlay",
+			"type": "rect",
+			"width": 1536,
+			"height": 768,
+			"x": 0,
+			"y": 0,
+			"color": "#ffffff",
+			"renderGroup": "overlay",
+			"interactive" : false,
+			"visible" : true
+		},
+		{
+			"name": "loadGroup",
+			"type": "group",
+			"x": "centerX",
+			"y": "centerY",
+			"alpha": 1,
+			"interactive" : false
+		},
+		{
+			"name": "loadMask",
+			"group": "loadGroup",
+			"type": "rect",
+			"width": 476,
+			"height": 126,
+			"x": -238,
+			"y": -63,
+			"renderGroup": "overlay",
+			"interactive" : false
+		},
+		{
+			"name": "loadBar",
+			"group": "loadGroup",
+			"type": "sprite",
+			"asset": "load_bar",
+			"x": 0,
+			"y": 0,
+			"anchor": 0.5,
+			"mask": "loadMask",
+			"renderGroup": "overlay",
+			"interactive" : false
+		},
+		{
+			"name": "loadBG",
+			"group": "loadGroup",
+			"type": "sprite",
+			"asset": "load_bg",
+			"x": 0,
+			"y": 0,
+			"anchor": 0.5,
+			"renderGroup": "overlay",
+			"interactive" : false
+		}
+	]
+}

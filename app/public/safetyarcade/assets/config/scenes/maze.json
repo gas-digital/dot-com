@@ -1,0 +1,207 @@
+{
+	"elements" : [
+		{
+			"name" :  "bgRect",
+			"type" : "rect",
+			"width" : 1536,
+			"height" : 768,
+			"renderLayer" : "bg",
+			"x" : 0,
+			"y" : 0,
+			"color" : "#ffffff"
+		},
+		{
+			"name" : "activityInstructions", 
+			"type" : "group", 
+			"x" : "left+=25", 
+			"y" :  50, 
+			"responsive" : true,
+			"elements" : [
+				{ 
+					"name" : "activityTitle", 
+					"type" : "sprite", 
+					"asset" : "ActivityTitle", 
+					"x" : 0, 
+					"y" :  0, 
+					"interactive" : true
+				},
+				{ 
+					"name" : "activityInstruxText", 
+					"type" : "text", 
+					"text" : "What job looks most interesting to you? Find your way to work through a maze of career opportunities.", 
+					"style" : {
+						"fontFamily" : ["BowlerHand", "Helvetica", "Arial"],
+						"fontSize": 24,
+						"fill": "#000000",
+						"wordWrap" : true,
+						"wordWrapWidth" : 280
+					},
+					"x" : 0, 
+					"y" :  80
+				}
+			]
+		},
+		{ 
+			"name" : "character",
+			"type" : "sprite", 
+			"asset" : "character",
+			"x" : "safeLeft+=300",
+			"y" : "safeBottom-=400",
+			"scaleX" : -1
+		},
+		{ 
+			"name" : "itemBank", 
+			"type" : "group", 
+			"x" : "safeRight-=120", 
+			"y" :  "safeTop+=240", 
+			"anchor" : 0,
+			"elements": [
+				{
+					"name" : "bankBg", 
+					"type" : "rect", 
+					"x" : 0, 
+					"y" :  0, 
+					"width": 120,
+					"height" : 520,
+					"anchor" : 0,
+					"color" : "#ffffff",
+					"lineWidth" : 5, 
+					"lineColor" : "0x0079ba", 
+					"lineAlpha" : 1
+				}
+			]
+		},
+		{ 
+			"name" : "mazeContainer", 
+			"type" : "group", 
+			"x" : 0, 
+			"y" :  0, 
+			"anchor" : 0
+		},
+		{ 
+			"name" : "pathContainer", 
+			"type" : "group", 
+			"x" : 0, 
+			"y" :  0, 
+			"anchor" : 0
+		},
+		{ 
+			"name" : "playerContainer", 
+			"type" : "group", 
+			"x" : 0, 
+			"y" :  0, 
+			"anchor" : 0,
+			"elements" : [
+				{ 
+					"name" : "player",
+					"type" : "sprite", 
+					"asset" : "boy",
+					"x" : 0,
+					"y" : 0,
+					"scale" : 1,
+					"anchor" : 0.5
+				}
+			]
+		},
+		{ 
+			"name" : "closeButton",
+			"type" : "sprite", 
+			"asset" : "close",
+			"x" : "right-=60",
+			"y" : "safeTop+=20",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "helpButton",
+			"type" : "sprite", 
+			"asset" : "help",
+			"x" : "right-=60",
+			"y" : "safeTop+=90",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "downloadButton",
+			"type" : "button", 
+			"up" : "download",
+			"over" : "download",
+			"down" : "download_down",
+			"x" : "right-=60",
+			"y" : "safeTop+=160",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true,
+			"visible": false
+		}
+	],
+	"interactions" : [
+		{ 
+			"object" : "closeButton" , 
+			"onPress" : "endActivity",
+			"args" : true
+		},
+		{ 
+			"object" : "helpButton" , 
+			"onPress" : "showHelpMenu",
+			"args" : true
+		},
+		{ 
+			"object" : "downloadButton" , 
+			"onPress" : "downloadActivity",
+			"args" : true
+		}
+	],
+	"boardLayout" : [
+		"NW", "ES", "NEW", "NW", "NS", "NS", "NS", "NES",
+		"W", "NE", "SW", "X", "N", "N", "NES", "NEW",
+		"ESW", "W", "NS", "ES", "EW", "SW", "NE", "EW",
+		"NW", "ES", "NW", "NS", "S", "NE", "SW", "ES",
+		"ESW", "NSW", "E", "NW", "N", "E", "NW", "NES",
+		"NSW", "NS", "ES", "EW", "ESW", "ESW", "W", "NES",
+		"NW", "NS", "N", "ES", "NW", "NS", "S", "NES",
+		"SW", "NES", "W", "N", "S", "NS", "NS", "NE",
+		"NW", "NS", "ES", "ESW", "NW", "N", "NS", "E",
+		"SW", "NES", "NSW", "NS", "ES", "SW", "NE", "ESW"
+	],
+	"boardCollectables" : [
+		{
+			"asset" : "safetyvest",
+			"text" : "",
+			"x" : 3,
+			"y" : 1
+		},
+		{
+			"asset" : "truck",
+			"text" : "",
+			"x" : 2,
+			"y" : 3
+		},
+		{
+			"asset" : "laptop",
+			"text" : "",
+			"x" : 5,
+			"y" : 4
+		},
+		{
+			"asset" : "flag",
+			"text" : "",
+			"x" : 7,
+			"y" : 5
+		},
+		{
+			"asset" : "notebook",
+			"text" : "",
+			"x" : 1,
+			"y" : 7
+		},
+		{
+			"asset" : "idbadge",
+			"text" : "",
+			"x" : 5,
+			"y" : 8
+		}
+	]
+}

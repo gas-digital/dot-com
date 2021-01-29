@@ -1,0 +1,106 @@
+[
+	{
+		"key" : "house",
+		"url" : "assets/images/connectpipes/HouseUtilities.png"
+	},
+	{
+		"key" : "communication",
+		"url" : "assets/images/connectpipes/UtilityCommunication.png"
+	},
+	{
+		"key" : "gas",
+		"url" : "assets/images/connectpipes/UtilityGas.png"
+	},
+	{
+		"key" : "power",
+		"url" : "assets/images/connectpipes/UtilityPower.png"
+	},
+	{
+		"key" : "water",
+		"url" : "assets/images/connectpipes/UtilityWater.png"
+	},
+	{
+		"key" : "trees1",
+		"url" : "assets/images/connectpipes/TreeGroup1.png"
+	},
+	{
+		"key" : "trees2",
+		"url" : "assets/images/connectpipes/TreeGroup2.png"
+	},
+	{
+		"key" : "trees3",
+		"url" : "assets/images/connectpipes/TreeGroup3.png"
+	},
+	{
+		"key" : "trees4",
+		"url" : "assets/images/connectpipes/TreeGroup4.png"
+	},
+	{
+		"key" : "close",
+		"url" : "assets/images/global/close.png"
+	},
+	{
+		"key" : "help",
+		"url" : "assets/images/global/help.png"
+	},
+	{
+		"key" : "download",
+		"url" : "assets/images/global/button_download_up.png"
+	},
+	{
+		"key" : "download_down",
+		"url" : "assets/images/global/button_download_down.png"
+	},
+	{
+		"key" : "star",
+		"url" : "assets/images/global/star.png"
+	},
+	{
+		"key" : "ActivityTitle",
+		"url" : "assets/images/global/ActivityTitle.png"
+	},
+	{
+		"key" : "character1",
+		"url" : "assets/images/connectpipes/guy_toolbox.png"
+	},
+	{
+		"key" : "character2",
+		"url" : "assets/images/connectpipes/guy_shovel.png"
+	},
+	{
+		"key" : "grasspatch",
+		"url" : "assets/images/connectpipes/grass_patch.png"
+	},
+	{
+		"key" : "completionbadge",
+		"url" : "assets/images/global/youdidit_badge.png"
+	},
+	{
+		"key" : "particles_sheet",
+		"url" : "assets/images/connectpipes/particles_sheet.json"
+	},
+	{
+		"key" : "connect_particles",
+		"url" : "assets/config/particles/connection_burst.json"
+	},
+	{
+		"key" : "excl_almost_there",
+		"url" : "assets/images/global/excl_almost_there.png"
+	},
+	{
+		"key" : "excl_dntcrosspipes",
+		"url" : "assets/images/global/excl_dntcrosspipes.png"
+	},
+	{
+		"key" : "excl_nicely_done",
+		"url" : "assets/images/global/excl_nicely_done.png"
+	},
+	{
+		"key" : "excl_oopstryagain",
+		"url" : "assets/images/global/excl_oopstryagain.png"
+	},
+	{
+		"key" : "excl_yougotthis",
+		"url" : "assets/images/global/excl_yougotthis.png"
+	}
+]

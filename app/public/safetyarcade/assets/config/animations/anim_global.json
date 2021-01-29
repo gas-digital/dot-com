@@ -1,0 +1,197 @@
+[
+	{
+		"name" : "Intro",
+		"fixed" : true,
+		"timeline" : [
+			{
+				"element" : "element1", 
+				"tweens" : [
+					{"type" : "from", "duration" : 1.5, "time" : 0, "params" : {"y" : -100, "ease" : "Bounce.easeOut"}},
+					{"type" : "from", "duration" : 1, "time" : 0, "params" : {"rotation" : 400}}
+				] 
+			},
+			{
+				"element" : "element2", 
+				"tweens" : [
+					{"property" : "scale", "type" : "from", "duration" : 0.75, "time" : 1, "params" : {"x" : 0, "y" : 0, "ease" : "Elastic.easeOut"}},
+					{"type" : "from", "duration" : 1, "time" : 1, "params" : {"rotation" : 100}}
+				] 
+			},
+			{
+				"element" : "element3", 
+				"tweens" : [
+					{"property" : "scale", "type" : "from", "duration" : 0.75, "time" : 2, "params" : {"x" : 0, "y" : 0, "ease" : "Elastic.easeOut"}},
+					{"type" : "from", "duration" : 1, "time" : 2, "params" : {"rotation" : -180}}
+				] 
+			}
+		]
+	},
+	{
+		"name" : "Transition",
+		"fixed" : false,
+		"tweens" : [
+			{"type" : "to", "duration" : 0.5, "time" : "in", "params" : {"alpha" : 1}},
+			{"type" : "to", "duration" : 0.5, "time" : "out", "params" : {"alpha" : 0}}
+		],
+
+		"labels" : [
+			{"name" : "in", "position" : 0},
+			{"name" : "out", "position" : 0.5, "pause" : true}
+		]
+	},
+	{
+		"name" : "ButtonOver",
+		"tweens" : [
+			{"property" : "scale", "type" : "to", "duration" : 0.5, "time" : 0, "params" : {"x" : 1.1, "y" : 1.1}}
+		]
+	},
+	{
+		"name" : "ButtonDown",
+		"tweens" : [
+			{"property" : "scale", "type" : "to", "duration" : 0.1, "time" : 0, "params" : {"x" : 0.8, "y" : 0.8, "ease" : "Power2.easeIn"}}
+		]
+	},
+	{
+		"name" : "ButtonUp",
+		"tweens" : [
+			{"property" : "scale", "type" : "to", "duration" : 0.1, "time" : 0, "params" : {"x" : 1, "y" : 1, "ease" : "Power2.easeIn"}}
+		]
+	},
+
+	{
+		"name" : "FadeOut",
+		"tweens" : [
+			{"type" : "to", "duration" : 0.3, "time" : 0, "params" : {"alpha" : 0}}
+		]
+	},
+
+	{
+		"name" : "FadeIn",
+		"tweens" : [
+			{"type" : "to", "duration" : 0.2, "params" : {"alpha" : 1}}
+		]
+	},
+
+	{
+		"name" : "Pulse",
+		"tweens" : [
+			{"property" : "scale", "type" : "from", "duration" : 0.6, "time" : 0, "params" : {"x" : 0.8, "y" : 0.8, "yoyo" : true, "repeat" : 4}}
+		]
+	},
+	
+	{
+		"name" : "Test000",
+		"tweens" : [
+			{"property" : 0, "type" : "from", "duration" : 2, "time" : 0, "params" : {"x" : 0, "y" : 0, "ease" : "Bounce.easeOut"}},
+			{"property" : 1, "type" : "from", "duration" : 2, "time" : 1, "params" : {"x" : 0, "y" : 0, "ease" : "Elastic.easeOut"}},
+			{"property" : 2, "type" : "from", "duration" : 2, "time" : 2, "params" : {"x" : 0, "y" : 0, "ease" : "Power2.easeOut"}}
+		],
+
+		"labels" : [
+			{"name" : "testLabel1", "position" : 0},
+			{"name" : "testLabel2", "position" : 1.5}
+		]
+	},
+	{
+		"name" : "Test001",
+		"tweens" : [
+			{"property" : "element1", "type" : "from", "duration" : 2, "time" : "testLabel1", "params" : {"x" : 0, "y" : 0, "ease" : "Bounce.easeOut"}},
+			{"property" : "element2", "type" : "from", "duration" : 2, "time" : "testLabel2", "params" : {"x" : "+=100", "y" : "-=100", "ease" : "Elastic.easeOut"}},
+			{"property" : "element3", "type" : "from", "duration" : 2, "time" : "testLabel3", "params" : {"x" : 0, "y" : 0, "ease" : "Power2.easeOut"}}
+		],
+
+		"labels" : [
+			{"name" : "testLabel1", "position" : 0},
+			{"name" : "testLabel2", "position" : 1},
+			{"name" : "testLabel3", "position" : 2}
+		]
+	},
+	{
+		"name" : "Test002",
+		"tweens" : [
+			{"property" : "element1.scale", "type" : "from", "duration" : 2, "time" : 0, "params" : {"x" : 0, "y" : 0, "ease" : "Bounce.easeOut"}},
+			{"property" : "element2.scale", "type" : "from", "duration" : 2, "time" : 1, "params" : {"x" : 0, "y" : 0, "ease" : "Elastic.easeOut"}},
+			{"property" : "element3.scale", "type" : "from", "duration" : 2, "time" : 2, "params" : {"x" : 0, "y" : 0, "ease" : "Power2.easeOut"}}
+
+		],
+
+		"labels" : [
+			{"name" : "testLabel1", "position" : 0},
+			{"name" : "testLabel2", "position" : 1.5}
+		]
+	},
+	{
+		"name" : "Test003",
+		"fixed" : true,
+		"timeline" : [
+			{
+				"element" : "element1", 
+				"tweens" : [
+					{"property" : "scale", "type" : "to", "duration" : 0.5, "time" : "element1Start", "params" : {"x" : "+=0.5", "y" : "+=0.5", "ease" : "Power2.easeIn"}},
+					{"type" : "from", "duration" : 0.5, "time" : "element1Start", "params" : {"x" : "-=100", "y" : "-=100", "ease" : "Power2.easeIn"}}
+				] 
+			},
+			{
+				"element" : "element2", 
+				"tweens" : [
+					{"property" : "scale", "type" : "to", "duration" : 0.5, "time" : "element2Start", "params" : {"x" : "+=0.5", "y" : "+=0.5", "ease" : "Power2.easeIn"}},
+					{"type" : "to", "duration" : 0.5, "time" : "element2Start", "params" : {"x" : "+=100", "y" : "+=100", "ease" : "Power2.easeIn"}}
+				] 
+			},
+			{
+				"element" : "element3", 
+				"tweens" : [
+					{"property" : "scale", "type" : "to", "duration" : 0.5, "time" : "element3Start", "params" : {"x" : "+=0.5", "y" : "+=0.5", "ease" : "Power2.easeIn"}},
+					{"type" : "to", "duration" : 0.5, "time" : "element3Start", "params" : {"y" : "-=100", "ease" : "Power2.easeIn"}}
+				] 
+			}
+		],
+
+		"labels" : [
+			{"name" : "element1Start", "position" : 0},
+			{"name" : "element2Start", "position" : 1, "pause" : true},
+			{"name" : "element3Start", "position" : 2, "pause" : true}
+		]
+	},
+	{
+		"name": "fadeUpOut",
+		"tweens" : [
+			{
+				"type" : "to", 
+				"duration" : 1, 
+				"time" : 0, 
+				"params" : {
+					"y" : "-=50", 
+					"ease": "Power1.easeOut"
+				}
+			},
+			{
+				"property" : "scale",
+				"type" : "to", 
+				"duration" : 0.5, 
+				"time" : 0, 
+				"params" : {
+					"x": 1,
+					"y": 1,
+					"ease": "Back.easeOut"
+				}
+			},
+			{
+				"type" : "to", 
+				"duration" : 0.2, 
+				"time" : 0, 
+				"params" : {
+					"alpha": 1
+				}
+			},
+			{
+				"type" : "to", 
+				"duration" : 0.2, 
+				"time" : 0.8, 
+				"params" : {
+					"alpha" : 0
+				}
+			}
+		]
+	}
+]

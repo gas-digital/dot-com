@@ -1,0 +1,72 @@
+{
+	"gameCompletion" : {
+		"ConnectPipes": false,
+		"WordScramble": false,
+		"MatchFlags": false,
+		"Crossword": false,
+		"Coloring": false,
+		"Maze": false,
+		"ISpy": false,
+		"WordSearch": false
+	},
+	"gameNamesForAnalytics" : {
+		"ConnectPipes": "Connect the Pipes",
+		"WordScramble": "C.A.R.E. Word Scramble",
+		"MatchFlags": "Safety Flag Match Game",
+		"Crossword": "Safety By The Numbers",
+		"Coloring": "Smell Gas, Act Fast Coloring",
+		"Maze": "Awesome Job Maze",
+		"ISpy": "My Home Search and Find",
+		"WordSearch": "Natural Gas Word Search"
+	},
+	"introText" : {
+		"ConnectPipes" : {
+			"title" : "What’s Underground?",
+			"body" : "Did you know there are many pipes and cables underground that help make your home run smoothly? Natural gas, water, cable, electricity, even the internet runs through lines that may run right through your yard! Engineers build underground systems to deliver these services safely across the country and into your home.",
+			"image" : "",
+			"titleImage" : ""
+		},
+		"Coloring": {
+			"title" : "The Nose Knows!",
+			"body" : "When it comes to detecting a natural gas leak, the nose knows! Natural gas is odorless. For your safety, {{ldc}} adds a distinctive odor, often associated with a rotten egg smell, so a potential natural gas leak can be detected. When you smell something like a rotten egg, but there’s no egg in sight, there could be a gas leak. Even though natural gas pipeline incidents are uncommon, it’s important to act fast. That means don’t delay—get away!<br><br>Leave the area right away and tell an adult to call 911.",
+			"image" : "",
+			"titleImage" : "./assets/images/coloring/smellgas_lockup.png"
+		},
+		"Crossword": {
+			"title" : "Safety By Numbers",
+			"body" : "How far in advance should you <strong>Call 811</strong>? You should call at least 3 working days before any digging project. Or submit a request online 24 hours/day, 7 days/week. Remember to wait approximately 48 hours to allow for the utility lines to be marked. Once the flags are up, you can safely start your digging project.",
+			"image" : "",
+			"titleImage" : ""
+		},
+		"ISpy": {
+			"title" : "Natural gas in the home",
+			"body" : "So how does natural gas work inside your home? Underground pipelines connect to the meter at your house. The meter connects to pipes inside your home, and then they carry natural gas to the appliances that use it. The water heater that heats your bath or the stove that cooks your food. The furnace that helps keep your house warm when it’s cold outside. All these things use natural gas to keep your house running smoothly.",
+			"image" : "",
+			"titleImage" : ""
+		},
+		"MatchFlags": {
+			"title" : "Know the flags!",
+			"body" : "Safety is our highest priority. Now that you know natural gas pipelines live underground, make sure to avoid these pipes when you dig. Always <strong>Call 811</strong> before beginning any digging project, so we can make sure natural gas and other underground lines are clearly marked.<br><br>When you <strong>Call 811</strong>, utility professionals will place flags and/or paint above their underground lines to tell you the areas to avoid. Natural gas pipelines are always marked with yellow flags.",
+			"image" : "./assets/images/matchflags/FlagKey.png",
+			"titleImage" : ""
+		},
+		"Maze": {
+			"title" : "On the Right Career Path",
+			"body" : "It takes a lot of people to deliver natural gas safely and reliably to homes and businesses across the state. Meter Readers. Mechanics. Construction Workers. Engineers. Customer Service Representatives. Accountants. IT Specialists. {{ldc}} employs hundreds of people to help deliver natural gas for home heating, cooking and water heating. Simply put, there are a lot of exciting jobs here. We love what we do!<br><br>For more information about careers in energy, visit <a target=\"_blank\" href=\"https://www.{{careerurl}}\">{{careerurl}}</a>.",
+			"image" : "",
+			"titleImage" : ""
+		},
+		"WordScramble": {
+			"title" : "Let’s dig with C.A.R.E.",
+			"body" : "Sometimes we need to dig outside to plant trees and flowers or excavate for other building projects like putting in a new pool or fence. Before digging, it’s important to call 811. Utility companies will come mark their pipes and lines with flags and paint, so you can dig without causing damage.<br><br>Always remember to dig with <strong>C.A.R.E.</strong> That means: <ul><li><strong>Call 811</strong> before you dig</li><li><strong>Allow</strong> the required time for free utility marking</li><li><strong>Respect</strong> the marks and then</li><li><strong>Excavate</strong> carefully!</li></ul>",
+			"image" : "",
+			"titleImage" : ""
+		},
+		"WordSearch": {
+			"title" : "You’re almost finished!",
+			"body" : "Now that you’ve learned all about natural gas, how to dig with C.A.R.E. and Call 811—it’s time to put that knowledge to the test. Think you’ve got what it takes to become a Safe Digging Champion? We’ve got one more challenge for you.",
+			"image" : "",
+			"titleImage" : ""
+		}
+	}
+}

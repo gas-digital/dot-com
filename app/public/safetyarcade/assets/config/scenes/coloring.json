@@ -1,0 +1,169 @@
+{
+	"elements" : [
+		{
+			"name" :  "bgRect",
+			"type" : "rect",
+			"width" : 1536,
+			"height" : 768,
+			"renderLayer" : "bg",
+			"x" : 0,
+			"y" : 0,
+			"color" : "#ffffff",
+			"interactive" : true
+		},
+		{
+			"name" : "coloringGroup",
+			"type" : "group", 
+			"x" : "safeLeft",
+			"y" : 0,
+			"elements":[{"name":"Flower3Stalk","type":"sprite","x":857.57,"y":643.52,"anchor":0.5,"asset":"SniffyColoring","frame":"flower3stalk.png"},{"name":"Flower3Petals","type":"sprite","x":859.7,"y":579.47,"anchor":0.5,"asset":"SniffyColoring","frame":"flower3petals.png"},{"name":"Flower3Bud","type":"sprite","x":856.14,"y":584.25,"anchor":0.5,"asset":"SniffyColoring","frame":"flower3bud.png"},{"name":"Flower2Petals","type":"sprite","x":194.28,"y":571.09,"anchor":0.5,"asset":"SniffyColoring","frame":"flower2petals.png"},{"name":"Flower2Bud","type":"sprite","x":194.93,"y":575.98,"anchor":0.5,"asset":"SniffyColoring","frame":"flower2bud.png"},{"name":"Flower2LeafStalk","type":"sprite","x":210.75,"y":636.92,"anchor":0.5,"asset":"SniffyColoring","frame":"flower2leafstalk.png"},{"name":"Cloud2","type":"sprite","x":179.92,"y":112.84,"anchor":0.5,"asset":"SniffyColoring","frame":"cloud2.png"},{"name":"Cloud1","type":"sprite","x":922.99,"y":149.95,"anchor":0.5,"asset":"SniffyColoring","frame":"cloud1.png"},{"name":"Grass","type":"sprite","x":510.44,"y":688.17,"anchor":0.5,"asset":"SniffyColoring","frame":"grass.png"},{"name":"Outlines_BG","type":"sprite","x":514.19,"y":387.22,"anchor":0.5,"asset":"SniffyColoring","frame":"outlines_bg.png"},{"name":"FurTail","type":"sprite","x":663.69,"y":283.73,"anchor":0.5,"asset":"SniffyColoring","frame":"furtail.png"},{"name":"FurTailBottom","type":"sprite","x":704.19,"y":284.53,"anchor":0.5,"asset":"SniffyColoring","frame":"furtailbottom.png"},{"name":"StripeTail","type":"sprite","x":621.68,"y":318.94,"anchor":0.5,"asset":"SniffyColoring","frame":"stripetail.png"},{"name":"Pants","type":"sprite","x":492.49,"y":606.52,"anchor":0.5,"asset":"SniffyColoring","frame":"pants.png"},{"name":"ShoeLeft","type":"sprite","x":308.08,"y":658.01,"anchor":0.5,"asset":"SniffyColoring","frame":"shoeleft.png"},{"name":"ShoeRight","type":"sprite","x":682.08,"y":657.11,"anchor":0.5,"asset":"SniffyColoring","frame":"shoeright.png"},{"name":"FurTorso2","type":"sprite","x":463.51,"y":329.47,"anchor":0.5,"asset":"SniffyColoring","frame":"furtorso2.png"},{"name":"StripeChest","type":"sprite","x":444.97,"y":366.73,"anchor":0.5,"asset":"SniffyColoring","frame":"stripechest.png"},{"name":"Overalls4","type":"sprite","x":410.15,"y":337.19,"anchor":0.5,"asset":"SniffyColoring","frame":"overalls4.png"},{"name":"Overalls3","type":"sprite","x":517.55,"y":327.53,"anchor":0.5,"asset":"SniffyColoring","frame":"overalls3.png"},{"name":"Overalls2","type":"sprite","x":443.68,"y":405.9,"anchor":0.5,"asset":"SniffyColoring","frame":"overalls2.png"},{"name":"Overalls1","type":"sprite","x":448.23,"y":483.23,"anchor":0.5,"asset":"SniffyColoring","frame":"overalls1.png"},{"name":"Belt3","type":"sprite","x":491.6,"y":519.1,"anchor":0.5,"asset":"SniffyColoring","frame":"belt3.png"},{"name":"Belt2","type":"sprite","x":397.03,"y":527.33,"anchor":0.5,"asset":"SniffyColoring","frame":"belt2.png"},{"name":"Belt1","type":"sprite","x":392.05,"y":528.51,"anchor":0.5,"asset":"SniffyColoring","frame":"belt1.png"},{"name":"ScrewdriverHandle","type":"sprite","x":466.22,"y":518.69,"anchor":0.5,"asset":"SniffyColoring","frame":"screwdriverhandle.png"},{"name":"ScrewdriverMetal","type":"sprite","x":495.97,"y":576.5,"anchor":0.5,"asset":"SniffyColoring","frame":"screwdrivermetal.png"},{"name":"Badge","type":"sprite","x":466,"y":368.82,"anchor":0.5,"asset":"SniffyColoring","frame":"badge.png"},{"name":"Mouth","type":"sprite","x":439.11,"y":245.06,"anchor":0.5,"asset":"SniffyColoring","frame":"mouth.png"},{"name":"Bangs","type":"sprite","x":443.6,"y":127.89,"anchor":0.5,"asset":"SniffyColoring","frame":"bangs.png"},{"name":"HardHat","type":"sprite","x":500.18,"y":154.71,"anchor":0.5,"asset":"SniffyColoring","frame":"hardhat.png"},{"name":"ShoeLeftShadow","type":"sprite","x":326.3,"y":680.58,"anchor":0.5,"asset":"SniffyColoring","frame":"shoeleftshadow.png"},{"name":"PantsLeftShadow","type":"sprite","x":382.61,"y":660.37,"anchor":0.5,"asset":"SniffyColoring","frame":"pantsleftshadow.png"},{"name":"HardHatShadow2","type":"sprite","x":550.23,"y":155.19,"anchor":0.5,"asset":"SniffyColoring","frame":"hardhatshadow2.png"},{"name":"HardHatShadow1","type":"sprite","x":543.77,"y":159.89,"anchor":0.5,"asset":"SniffyColoring","frame":"hardhatshadow1.png"},{"name":"HairShadow","type":"sprite","x":442.03,"y":144.61,"anchor":0.5,"asset":"SniffyColoring","frame":"hairshadow.png"},{"name":"EyeOutlineRight","type":"sprite","x":455.43,"y":185.52,"anchor":0.5,"asset":"SniffyColoring","frame":"eyeoutlineright.png"},{"name":"IrisRight","type":"sprite","x":445.64,"y":191.4,"anchor":0.5,"asset":"SniffyColoring","frame":"irisright.png"},{"name":"EyeoutlineLeft","type":"sprite","x":405.45,"y":181.27,"anchor":0.5,"asset":"SniffyColoring","frame":"eyeoutlineleft.png"},{"name":"IrisLeft","type":"sprite","x":404.77,"y":183.24,"anchor":0.5,"asset":"SniffyColoring","frame":"irisleft.png"},{"name":"FurForehead","type":"sprite","x":426.61,"y":180.71,"anchor":0.5,"asset":"SniffyColoring","frame":"furforehead.png"},{"name":"CheekShadow","type":"sprite","x":492.8,"y":252.43,"anchor":0.5,"asset":"SniffyColoring","frame":"cheekshadow.png"},{"name":"ShoeRightShadow","type":"sprite","x":680.55,"y":660.29,"anchor":0.5,"asset":"SniffyColoring","frame":"shoerightshadow.png"},{"name":"PantsRightShadow3","type":"sprite","x":627.26,"y":565.78,"anchor":0.5,"asset":"SniffyColoring","frame":"pantsrightshadow3.png"},{"name":"PantsRightShadow2","type":"sprite","x":641.04,"y":589.64,"anchor":0.5,"asset":"SniffyColoring","frame":"pantsrightshadow2.png"},{"name":"PantsRightShadow1","type":"sprite","x":548.09,"y":610.16,"anchor":0.5,"asset":"SniffyColoring","frame":"pantsrightshadow1.png"},{"name":"BeltShadow","type":"sprite","x":579.58,"y":506.3,"anchor":0.5,"asset":"SniffyColoring","frame":"beltshadow.png"},{"name":"ScrewdriverShadow","type":"sprite","x":468.72,"y":515.78,"anchor":0.5,"asset":"SniffyColoring","frame":"screwdrivershadow.png"},{"name":"BodyShadow4","type":"sprite","x":508.12,"y":408.47,"anchor":0.5,"asset":"SniffyColoring","frame":"bodyshadow4.png"},{"name":"BodyShadow3","type":"sprite","x":573.81,"y":240.76,"anchor":0.5,"asset":"SniffyColoring","frame":"bodyshadow3.png"},{"name":"BodyShadow2","type":"sprite","x":580.68,"y":450.38,"anchor":0.5,"asset":"SniffyColoring","frame":"bodyshadow2.png"},{"name":"BodyShadow1","type":"sprite","x":378.09,"y":409.95,"anchor":0.5,"asset":"SniffyColoring","frame":"bodyshadow1.png"},{"name":"OverallsShadow","type":"sprite","x":537.59,"y":316.35,"anchor":0.5,"asset":"SniffyColoring","frame":"overallsshadow.png"},{"name":"FurTailShadow2","type":"sprite","x":650.16,"y":111.24,"anchor":0.5,"asset":"SniffyColoring","frame":"furtailshadow2.png"},{"name":"FurTailShadow","type":"sprite","x":621.02,"y":361.61,"anchor":0.5,"asset":"SniffyColoring","frame":"furtailshadow.png"},{"name":"Outlines_FG","type":"sprite","x":518.08,"y":383.82,"anchor":0.5,"asset":"SniffyColoring","frame":"outlines_fg.png"}]
+		},
+		{
+			"name" : "activityInstructions", 
+			"type" : "group", 
+			"x" : "right-=220", 
+			"y" :  250, 
+			"responsive" : true,
+			"elements" : [
+				{ 
+					"name" : "activityTitle", 
+					"type" : "sprite", 
+					"asset" : "ActivityTitle", 
+					"x" : 0, 
+					"y" :  0, 
+					"interactive" : true
+				},
+				{ 
+					"name" : "activityInstruxText", 
+					"type" : "text", 
+					"text" : "Sniffy the Skunk says, “Smell gas, act fast!” Color in Sniffy to help make him a Safe Digging Champion too.", 
+					"style" : {
+						"fontFamily" : ["BowlerHand", "Helvetica", "Arial"],
+						"fontSize": 22,
+						"fill": "#000000",
+						"wordWrap" : true,
+						"wordWrapWidth" : 220
+					},
+					"x" : 0, 
+					"y" :  80
+				}
+			]
+		},
+		{
+			"name" :  "palettebg",
+			"type" : "sprite", 
+			"asset" : "tray"
+		},
+		{ 
+			"name" : "colorPalette",
+			"type" : "group", 
+			"elements": [
+				
+			]
+		},
+		{ 
+			"name" : "doneButton",
+			"type" : "button", 
+			"up" : "done",
+			"over" : "done",
+			"down" : "done_down",
+			"x" : "right-=20",
+			"y" : "safeBottom-=20",
+			"responsive" : "true",
+			"anchor" : 1,
+			"interactive" : true
+		},
+		{ 
+			"name" : "closeButton",
+			"type" : "sprite", 
+			"asset" : "close",
+			"x" : "right-=60",
+			"y" : "safeTop+=20",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "helpButton",
+			"type" : "sprite", 
+			"asset" : "help",
+			"x" : "right-=60",
+			"y" : "safeTop+=90",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "downloadButton",
+			"type" : "button", 
+			"up" : "download",
+			"over" : "download",
+			"down" : "download_down",
+			"x" : "right-=60",
+			"y" : "safeTop+=160",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "shareButton",
+			"type" : "button", 
+			"up" : "download",
+			"over" : "download",
+			"down" : "download_down",
+			"x" : "right-=60",
+			"y" : "safeTop+=210",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true,
+			"visible": false
+		}
+	],
+	"interactions" : [
+		{ 
+			"object" : "closeButton" , 
+			"onPress" : "endActivity",
+			"args" : true
+		},
+		{ 
+			"object" : "doneButton" , 
+			"onPress" : "endActivity",
+			"args" : true
+		},
+		{ 
+			"object" : "helpButton" , 
+			"onPress" : "showHelpMenu",
+			"args" : true
+		},
+		{ 
+			"object" : "downloadButton" , 
+			"onPress" : "downloadFinishedPage",
+			"args" : true
+		},
+		{ 
+			"object" : "shareButton" , 
+			"onPress" : "requestActivityShare",
+			"args" : true
+		}
+	],
+	"paletteColors" : [
+		"#ffffff",
+		"#000000",
+		"#626262",
+		"#ec1c24",
+		"#b1181e",
+		"#6b0000",
+		"#b2d235",
+		"#529736",
+		"#00591d",
+		"#00bcf1",
+		"#007db9",
+		"#003a5d",
+		"#fdb714",
+		"#f26322",
+		"#cd853f",
+		"#652517",
+		"#00b5af",
+		"#004b45"
+	]
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Safe Digging Arcade</title>
+	<meta name="description" content="">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<meta name='og:title' content='Safe Digging Arcade'>
+	<meta name='og:image' content='./assets/images/site/modal_underground_char.png'>
+
+	<link rel="icon" href="./assets/favicons/cropped-android-chrome-512x512-32x32.png" sizes="32x32" />
+	<link rel="icon" href="./assets/favicons/cropped-android-chrome-512x512-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="./assets/favicons/cropped-android-chrome-512x512-180x180.png" />
+	<meta name="msapplication-TileImage" content="./assets/favicons/cropped-android-chrome-512x512-270x270.png" />
+
+	<style type="text/css">
+		html, body {
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			margin: 0;
+		}
+	</style>
+
+
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-156480795-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+	<script type="text/javascript">
+		var asset_path;
+
+		// Setting the asset path when on local development vs sesame servers. Add each development machine's internal IP address / port (MAMP) here. 
+		if (location.protocol === "http:" || location.protocol === "https:") {
+			var pathArray = location.pathname.split('/');
+			var dirPath = location.pathname;
+
+			if (pathArray[pathArray.length - 1] === "index.html") {
+				// drop direct html reference and replace with 
+				pathArray.pop();
+				dirPath = pathArray.join('/') + '/';
+			}
+
+			asset_path = location.protocol + "//" + location.host + dirPath;
+		} else {
+			asset_path = "./";
+		}
+
+		// set base URL path to use
+		document.write('<base href="' + asset_path + '" />');
+	</script>
+
+	<!-- Audio context fix -->
+	<script type="text/javascript">
+		var resumeAudioContext = function() {
+			// handler for fixing suspended audio context in Chrome
+			try {
+				if (createjs.WebAudioPlugin.context && createjs.WebAudioPlugin.context.state === "suspended") {
+					createjs.WebAudioPlugin.context.resume();
+					// Should only need to fire once
+					window.removeEventListener("click", resumeAudioContext);
+					window.removeEventListener("touchend", resumeAudioContext);
+				}
+			} catch (e) {
+				// SoundJS context or web audio plugin may not exist
+				console.error("There was an error while trying to resume the SoundJS Web Audio context...");
+				console.error(e);
+			}
+		};
+
+		window.addEventListener("click", resumeAudioContext);
+		window.addEventListener("touchend", resumeAudioContext);
+	</script>
+
+	<link rel="stylesheet" href="assets/css/main.min.css?v=10">
+
+	<!-- inject:scripts -->
+
+	<!-- endinject -->
+
+
+	<!-- GAME DATA -->
+	<script src="./assets/js/vendors-app.js?v=40"></script>
+	<script src="./assets/js/vendors-app-teacher.js?v=40"></script>
+	<!-- inject:main -->
+	<script src="./assets/js/app-teacher.js?v=40"></script>
+	<script src="./assets/js/app.js?v=40"></script>
+	<!-- endinject -->
+
+</head>
+
+<body>
+
+	<section id="bg-elements">
+		<div id="bg-arrows-1"></div>
+		<div id="bg-arrows-2"></div>
+		<div id="bg-arrows-3"></div>
+	</section>
+
+	<header>
+		<div id="logo-lockup">
+			<img src="./assets/images/site/811LogoTransparentSmall.png">
+			<h1>Safe Digging Arcade</h1>
+			<h3>Complete all 8 activities below to become a safe digging champion!</h3>
+		</div>
+		<button type="button" id="activity-download-button">
+			<img src="./assets/images/global/icon_dl.png">
+			<p>Download Activities</p>
+		</button>
+		<button type="button" id="activity-share-button">
+			<img src="./assets/images/global/icon_fb.png">
+			<p>Share on Facebook</p>
+		</button>
+	</header>
+
+	<section id="activity-select">
+		<div class="pipe-container">
+			<div class="pipe-one">
+				<div class="pipe-flange-1"></div>
+				<div class="pipe-corner-1"></div>
+			</div>
+			<div class="pipe-one-down">
+				
+			</div>
+			<div class="pipe-two">
+				<div class="pipe-corner-1"></div>
+				<div class="pipe-corner-2"></div>
+			</div>
+			<div class="pipe-two-down">
+				
+			</div>
+			<div class="pipe-three">
+				<div class="pipe-flange-1"></div>
+				<div class="pipe-flange-2"></div>
+			</div>
+			<div class="pipe-right">
+				
+			</div>
+		</div>
+
+		<ul>
+			<li id="intro-button-container">
+				<div class="intro-button">
+					<!-- Introductory text -->
+					<input type="image" name="introduction" src="./assets/images/site/icon_intro.png" alt="Introduction to Safe Digging Arcade">
+					<img class="hover" src="./assets/images/site/icon_intro_hover.png">
+				</div>
+			</li>
+
+			<li id="connect-pipes">
+				<div class="activity-launch-item-container">
+					<!-- Connect Pipes -->
+					<input type="image" class="activity-launch-button" name="connect-pipes" data-activity="ConnectPipes" src="./assets/images/site/icon_learnwhatsunderground.png" alt="Play Connect the spots, learn what's underground">
+					<img class="hover" src="./assets/images/site/icon_learnwhatsunderground_hover.png">
+				</div>
+			</li>
+			<li id="word-scramble">
+				<div class="activity-launch-item-container">
+					<!-- Word Scramble -->
+					<input type="image" class="activity-launch-button" name="" data-activity="WordScramble" src="./assets/images/site/icon_idigwithcare.png" alt="Play Word Scramble, I dig with CARE">
+					<img class="hover" src="./assets/images/site/icon_idigwithcare_hover.png">
+				</div>
+			</li>
+			<li id="match-flags">
+				<div class="activity-launch-item-container">
+					<!-- Match Flags -->
+					<input type="image" class="activity-launch-button" name="" data-activity="MatchFlags" src="./assets/images/site/icon_learnaboutsafedigging.png" alt="Play Match the Flags, Learn about safe digging">
+					<img class="hover" src="./assets/images/site/icon_learnaboutsafedigging_hover.png">
+				</div>
+			</li>
+			<li id="math-puzzle">
+				<div class="activity-launch-item-container">
+					<!-- Math Puzzle -->
+					<input type="image" class="activity-launch-button" name="" data-activity="Crossword" src="./assets/images/site/icon_crossword.png" alt="Play Math Puzzle, Damage prevention by the numbers">
+					<img class="hover" src="./assets/images/site/icon_crossword_hover.png">
+				</div>
+			</li>
+			<li id="coloring">
+				<div class="activity-launch-item-container">
+					<!-- Coloring -->
+					<input type="image" class="activity-launch-button" name="" data-activity="Coloring" src="./assets/images/site/icon_sniffy.png" alt="Play Coloring, Smell gas? Act fast!">
+					<img class="hover" src="./assets/images/site/icon_sniffy_hover.png">
+				</div>
+			</li>
+			<li id="maze">
+				<div class="activity-launch-item-container">
+					<!-- Maze -->
+					<input type="image" class="activity-launch-button" name="" data-activity="Maze" src="./assets/images/site/icon_maze.png" alt="Play Maze, Working at Virginial Natural Gas">
+					<img class="hover" src="./assets/images/site/icon_maze_hover.png">
+				</div>
+			</li>
+			<li id="appliances">
+				<div class="activity-launch-item-container">
+					<!-- Appliances -->
+					<input type="image" class="activity-launch-button" name="" data-activity="ISpy" src="./assets/images/site/icon_myhome.png" alt="Play Search and Find, I know how my house uses natural gas">
+					<img class="hover" src="./assets/images/site/icon_myhome_hover.png">
+				</div>
+			</li>
+			<li id="word-search">
+				<div class="activity-launch-item-container">
+					<!-- Word Search -->
+					<input type="image" class="activity-launch-button" name="" data-activity="WordSearch" src="./assets/images/site/icon_wordsearch.png" alt="Play Natural Gas Word Seach,">
+					<img class="hover" src="./assets/images/site/icon_wordsearch_hover.png">
+				</div>
+			</li>
+
+			<li id="certificate-button-container">
+				<div id="certificate-button" class="disabled">
+					<!-- Certificate button -->
+					<input type="image" disabled="true" name="certificate-button" src="./assets/images/site/icon_certificate.png" alt="Safe Digging Champion Certificate">
+					<img class="hover" src="./assets/images/site/icon_certificate_hover.png">
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section id="canvas-wrapper">
+		<div id="uiContainer">
+			<div class="overlay-container">
+				<h2 id="game-overlay-title">
+					Learn what’s underground!
+					<img id="game-title-image" src="">
+				</h2>
+				<div id="game-overlay-content">
+					<p id="game-overlay-body">
+						Did you know that there are natural gas pipelines and other utility lines such as water, cable and electric running underground? Engineers build underground systems to deliver these services safely across the country to your home. Homes and businesses use natural gas for heating, cooking and powering their factories.
+					</p>
+					<img id="game-overlay-image" src="">
+				</div>
+				
+				<input id="start-game-button" type="image" name="start-game" src="./assets/images/site/LetsGoButtonType.png" alt="Let's Go!">
+
+				<div id="game-overlay-footer" class="connect-pipes-overlay"></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="students-parents-intro-wrapper">
+		<div class="overlay-container">
+			<h2 class="overlay-title">
+				Welcome to the Safe Digging Arcade
+			</h2>
+			<div class="overlay-content">
+				<p class="overlay-body">
+					<p>
+						Hey kids! Did you know that there are underground utilities buried in your yard? It’s time to dig into some fun games and learn how you and your family can stay safe when digging around your home. Complete all 8 activities below and become a Safe Digging champion! 
+					</p>
+					<p>
+						You can dial 811 and utility companies will mark their underground services like gas, power, phone and cable lines with paint or flags for free, so you know where they are located and can dig safely. Cool, right?  
+					</p>
+				</p>
+			</div>
+
+			<input id="start-first-activity-button" class="overlay-start-button" type="image" name="start-first-activity" src="./assets/images/site/LetsGoButtonType.png" alt="Let's Go!">
+
+			<div class="overlay-footer"></div>
+		</div>
+	</section>
+
+	<section id="certificate-wrapper">
+		<div class="container-border">
+			<img class="corner-tl" src="./assets/images/certificate/CertificateCorner.png">
+			<img class="corner-tr" src="./assets/images/certificate/CertificateCorner.png">
+			<img class="corner-br" src="./assets/images/certificate/CertificateCorner.png">
+			<img class="corner-bl" src="./assets/images/certificate/CertificateCorner.png">
+
+			<img class="border-t" src="./assets/images/certificate/CertificateEdgeTop.png">
+			<img class="border-r" src="./assets/images/certificate/CertificateEdgeLeft.png">
+			<img class="border-b" src="./assets/images/certificate/CertificateEdgeTop.png">
+			<img class="border-l" src="./assets/images/certificate/CertificateEdgeLeft.png">
+		</div>
+		<!-- <img src="./assets/images/site/CertificateIsolated.png"> -->
+		<img class="congrats-banner" src="./assets/images/certificate/CongratsBanner.png">
+		<img class="champion-text" src="./assets/images/certificate/SafeDigging.png">
+
+		<div class="star-lockup">
+			<img class="star" src="./assets/images/certificate/CertificateStar.png">
+			<img class="logo" src="./assets/images/site/811LogoTransparentSmall.png">
+			<img class="know-whats-below" src="./assets/images/certificate/KnowWhatsBelow.png">
+		</div>
+
+		<div class="banner-name">
+			<img class="banner" src="./assets/images/certificate/GroupNameContainer.png">
+			<input type="text" name="certificate-name" id="certificate-name" placeholder="Type your name here">
+		</div>
+
+		<p class="more-activities">
+			For additional activities, or student credit for participation information, visit 
+			<a href="https://www.virginianaturalgas.com/kidscorner">virginianaturalgas.com/kidscorner</a>
+		</p>
+
+		<button id="cert-close-button" type="button"></button>
+		<button id="cert-print-button" type="button"></button>
+		<button id="cert-download-button" type="button"></button>
+	</section>
+
+	<section id="age-gate-overlay">
+		<div class="overlay-container">
+			<h2 class="overlay-title">
+				Are you a parent?
+			</h2>
+			<div class="overlay-content">
+				<p class="overlay-body">
+					<p>
+						You must be over 13 to share on Facebook.
+					</p>
+				</p>
+
+				<div class="choice-buttons">
+					<button id="age-button-no" class="age-gate-button" alt="No, I am under 13">No, I am under 13</button>
+
+					<button id="age-button-yes" class="age-gate-button" alt="Yes, I am over 13!">Yes, I am over 13!</button>
+				</div>
+			</div>		
+		</div>
+	</section>
+
+	<footer>
+		<img id="ldc-logo" src="">
+	</footer>
+</body>
+
+</html>

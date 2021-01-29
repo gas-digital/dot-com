@@ -1,0 +1,30 @@
+.fusion-column-wrapper{
+	.fusion-recent-posts-carousel{
+		overflow-y: visible;
+		&.swiper-container-initialized{
+			clear: both;
+			.fusion-columns{
+				clear: both;
+				overflow: visible;
+				margin: 0 0 30px;
+				.columns{
+					overflow: visible;
+				}
+				.column{
+					padding-left: 0;
+					padding-right: 0;
+				}
+				.recent-posts-content{
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
+			}
+		}
+		.swiper-scrollbar{
+			clear: both;
+			position: relative;
+			margin: 0 auto;
+// 			width: 50%;
+		}
+	}
+}
