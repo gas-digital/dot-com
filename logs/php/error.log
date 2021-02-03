@@ -715,3 +715,24 @@
 [29-Jan-2021 22:03:49 UTC] PHP  17. WP_Hook->apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/plugin.php:206
 [29-Jan-2021 22:03:49 UTC] PHP  18. Fusion_Dynamic_CSS->add_extra_files() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp-hook.php:287
 [29-Jan-2021 22:03:49 UTC] PHP  19. file_get_contents() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css.php:574
+[03-Feb-2021 19:17:18 UTC] PHP Warning:  file_get_contents(fusion-recent-posts-carousel-swiper): failed to open stream: No such file or directory in /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css.php on line 574
+[03-Feb-2021 19:17:18 UTC] PHP Stack trace:
+[03-Feb-2021 19:17:18 UTC] PHP   1. {main}() /Users/barnesy/Projects/dot-com/app/public/index.php:0
+[03-Feb-2021 19:17:18 UTC] PHP   2. require() /Users/barnesy/Projects/dot-com/app/public/index.php:17
+[03-Feb-2021 19:17:18 UTC] PHP   3. wp() /Users/barnesy/Projects/dot-com/app/public/wp-blog-header.php:16
+[03-Feb-2021 19:17:18 UTC] PHP   4. WP->main() /Users/barnesy/Projects/dot-com/app/public/wp-includes/functions.php:1274
+[03-Feb-2021 19:17:18 UTC] PHP   5. do_action_ref_array() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp.php:752
+[03-Feb-2021 19:17:18 UTC] PHP   6. WP_Hook->do_action() /Users/barnesy/Projects/dot-com/app/public/wp-includes/plugin.php:544
+[03-Feb-2021 19:17:18 UTC] PHP   7. WP_Hook->apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp-hook.php:311
+[03-Feb-2021 19:17:18 UTC] PHP   8. Fusion_Dynamic_CSS->init() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp-hook.php:287
+[03-Feb-2021 19:17:18 UTC] PHP   9. Fusion_Dynamic_CSS_File->__construct() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css.php:196
+[03-Feb-2021 19:17:18 UTC] PHP  10. Fusion_Dynamic_CSS_File->can_write() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-file.php:56
+[03-Feb-2021 19:17:18 UTC] PHP  11. Fusion_Dynamic_CSS_File->file() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-file.php:177
+[03-Feb-2021 19:17:18 UTC] PHP  12. Fusion_Dynamic_CSS_Helpers->get_dynamic_css_id() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-file.php:108
+[03-Feb-2021 19:17:18 UTC] PHP  13. Fusion_Dynamic_CSS->generate_final_css() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-helpers.php:359
+[03-Feb-2021 19:17:18 UTC] PHP  14. Fusion_Dynamic_CSS_Helpers->get_dynamic_css() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css.php:276
+[03-Feb-2021 19:17:18 UTC] PHP  15. Fusion_Dynamic_CSS_Helpers->parser() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-helpers.php:376
+[03-Feb-2021 19:17:18 UTC] PHP  16. apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-helpers.php:194
+[03-Feb-2021 19:17:18 UTC] PHP  17. WP_Hook->apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/plugin.php:206
+[03-Feb-2021 19:17:18 UTC] PHP  18. Fusion_Dynamic_CSS->add_extra_files() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp-hook.php:287
+[03-Feb-2021 19:17:18 UTC] PHP  19. file_get_contents() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css.php:574
