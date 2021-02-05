@@ -59,9 +59,9 @@ $i = 0;
 
 	<div href="/community" class="image-break pattern dark" style="background-image:url('https://southerncompanygas.com/wp-content/uploads/2019/10/scgco-what-is-natural-gas.jpg');">
     <div class="dimmer"></div>
-    <div class="copy">
+    <div class="copy copy--large">
       <p class="label">Renewable Natural Gas</p>
-      <p class="hed hed--large">What is natrual gas</p>
+      <p class="hed hed--large">What is renewable natural gas?</p>
       <p>Natural gas is the earth’s cleanest fossil fuel and is colorless and odorless in its natural state. It is composed of four hydrocarbon atoms and one carbon atom (CH4 or methane). Learn more:</p>
 			<?php get_template_part( 'templates/mailchimp-form' ); ?>
     </div>
