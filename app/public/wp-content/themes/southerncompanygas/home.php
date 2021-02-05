@@ -115,7 +115,8 @@ $i = 0;
       <div class="copy copy--left">
 				<p class="label">Community</p>
         <h2 class="hed hed--large">Giving back to those we serve</h2>
-	      <p>We have been proud members of the communities we serve for more than 160 years. Join our community.</p>
+	      <p>We have been proud members of the communities we serve for more than 160 years.</p>
+				<p><a href="/community">Learn more &#8594;</a></p>
       </div>
     </div>
   </div>
