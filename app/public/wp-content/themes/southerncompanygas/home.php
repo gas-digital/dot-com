@@ -9,13 +9,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $post_params = array('post_type'=>'post',
 										 'post_status'=>'publish',
-										 'posts_per_page'=>4);
+										 'posts_per_page'=>3,
+									 	 'category_name' => 'featured');
 
 $wpb_all_query = new WP_Query($post_params);
 
 $i = 0;
 ?>
 <?php get_header(); ?>
+
+<a href="/alwayshere" class="image-break pattern dark" style="background-image:url('/alwayshere/img/alwayshere-1.png');">
+	<div class="dimmer"></div>
+	<div class="copy copy--left">
+		<p class="label">Always here</p>
+		<p class="hed hed--large">Delivering critical warmth during the bitter cold</p>
+		<p>During extreme weather conditions, our crews head out to brave the bitter cold so our customers can head inside to the warmth and comfort of their home or business. Our employees are on the front lines, ready to work safely around-the-clock to ensure our customers have what they need, when they need it. We’re preparing for this weekend’s arctic blast with lessons learned from the 2019 polar vortex.</p>
+	</div>
+</a>
+
 
 <?php if ( $wpb_all_query->have_posts() ) : ?>
 
@@ -35,16 +46,6 @@ $i = 0;
 				endwhile;
 	  ?>
 		<!-- end of the loop -->
-
-		<a href="/environment" class="card card--medium">
-			<div class="card--featured">
-				<img src="/environment/img/clean-horz@3x.png" />
-			</div>
-			<div class="card--content">
-				<p class="label">Environment</p>
-				<p class="hed">Everyone deserves energy that is not only clean, but also safe, reliable and affordable. </p>
-			</div>
-		</a>
 
 	</div>
 
@@ -93,16 +94,29 @@ $i = 0;
 			<h2 class="hed hed--large">A family of companies</h2>
 		</div>
 
-		<img src="https://www.fueluponthis.com/design-system/img/companies-screenshot.png" />
+		<div class="company-container">
+			<div class="company"><img src="/brand-mark.png" />Southern Company <br/>Gas</div>
+			<div class="company"><img src="/brand-mark.png" />Atlanta <br/>Gas Light</div>
+			<div class="company"><img src="/brand-mark.png" />Chattanooga<br/> Gas</div>
+			<div class="company"><img src="/brand-mark.png" />Nicor Gas</div>
+			<div class="company"><img src="/brand-mark.png" />Viginia<br/> Natural Gas</div>
+			<div class="company"><img src="/brand-mark.png" />Sequent Energy<br/>  Management</div>
+			<div class="company"><img src="/brand-mark.png" />Nicor<br/> Enerchange</div>
+			<div class="company"><img src="/brand-mark.png" />Central Valley<br/> Gas Storage</div>
+			<div class="company"><img src="/brand-mark.png" />Golden <br/>Triangle Storage</div>
+		</div>
 	</div>
 
-  <div href="/community" class="image-break pattern dark" style="background-image:url('https://southerncompanygas.com/wp-content/uploads/2019/12/soco-community.jpg');">
-    <div class="dimmer"></div>
-    <div class="copy">
-      <p class="label">Community</p>
-      <p class="hed hed--large">Giving back to those we serve</p>
-      <p>We have been proud members of the communities we serve for more than 160 years. Join our community:</p>
-			<?php get_template_part( 'templates/mailchimp-form' ); ?>
+	<div class="pattern split split--left-weighted">
+    <div class="left">
+      <img class="image" src="https://southerncompanygas.com/wp-content/uploads/2019/12/soco-community.jpg" alt="" />
+    </div>
+    <div class="right">
+      <div class="copy copy--left">
+				<p class="label">Community</p>
+        <h2 class="hed hed--large">Giving back to those we serve</h2>
+	      <p>We have been proud members of the communities we serve for more than 160 years. Join our community.</p>
+      </div>
     </div>
   </div>
 
@@ -119,14 +133,36 @@ $i = 0;
 		margin-top: 10rem;
 	}
 
+	.company-container {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 100rem;
+		align-items: flex-start;
+		margin: 0 auto;
+		justify-content: space-around;
+	}
+
+	.company {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin: 3rem;
+		font-weight: 500;
+		font-size: 1.8rem;
+		text-align: center;
+		line-height: 1.2;
+		width: 18rem;
+	}
+
+	.company img {
+		max-width: 6rem;
+	}
+
 	.companies {
+		margin: 12rem 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
-		img {
-			width: 100%;
-		}
 	}
 </style>
