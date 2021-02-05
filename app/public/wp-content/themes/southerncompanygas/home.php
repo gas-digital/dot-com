@@ -34,7 +34,7 @@ $i = 0;
 
 		<!-- the loop -->
 		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-				<a href="<?php the_permalink(); ?>" class="card <?php if($i%2 ) echo "card--large" ?>">
+				<a href="<?php the_permalink(); ?>" class="card card--medium">
 					<div class="card--featured"><?= the_post_thumbnail( 'medium' ); ?></div>
 					<div class="card--content">
 						<p class="label"><?= the_date(); ?></p>
@@ -95,15 +95,17 @@ $i = 0;
 		</div>
 
 		<div class="company-container">
-			<div class="company"><img src="/brand-mark.png" />Southern Company <br/>Gas</div>
-			<div class="company"><img src="/brand-mark.png" />Atlanta <br/>Gas Light</div>
-			<div class="company"><img src="/brand-mark.png" />Chattanooga<br/> Gas</div>
-			<div class="company"><img src="/brand-mark.png" />Nicor Gas</div>
-			<div class="company"><img src="/brand-mark.png" />Viginia<br/> Natural Gas</div>
-			<div class="company"><img src="/brand-mark.png" />Sequent Energy<br/>  Management</div>
+			<a href="https://www.southerncompanygas.com/" class="company"><img src="/brand-mark.png" />Southern Company <br/>Gas</a>
+			<a href="https://www.atlantagaslight.com/" class="company"><img src="/brand-mark.png" />Atlanta <br/>Gas Light</a>
+			<a href="https://www.chattanoogagas.com/" class="company"><img src="/brand-mark.png" />Chattanooga<br/> Gas</a>
+			<a href="https://www.nicorgas.com/" class="company"><img src="/brand-mark.png" />Nicor Gas</a>
+			<a href="https://www.virginianaturalgas.com/" class="company"><img src="/brand-mark.png" />Viginia<br/> Natural Gas</a>
+			<a href="https://www.sequentenergy.com/" class="company"><img src="/brand-mark.png" />Sequent Energy<br/>  Management</a>
 			<div class="company"><img src="/brand-mark.png" />Nicor<br/> Enerchange</div>
-			<div class="company"><img src="/brand-mark.png" />Central Valley<br/> Gas Storage</div>
-			<div class="company"><img src="/brand-mark.png" />Golden <br/>Triangle Storage</div>
+			<!-- http://nicorenerchange.com/ -->
+			<a href="https://www.pivotalenergydev.com/commercial-operations/central-valley-gas-storage-operations.html" class="company"><img src="/brand-mark.png" />Central Valley<br/> Gas Storage</a>
+			<a href="https://www.pivotalenergydev.com/commercial-operations/golden-triangle-storage-operations.html" class="company"><img src="/brand-mark.png" />Golden <br/>Triangle Storage</a>
+			<a href="https://southstarenergy.com/" class="company"><img src="/flame-brand-mark.png" />South Star <br/>Energy Services</a>
 		</div>
 	</div>
 
@@ -153,6 +155,13 @@ $i = 0;
 		text-align: center;
 		line-height: 1.2;
 		width: 18rem;
+		color: grey;
+		cursor: pointer;
+	}
+
+	.company:hover {
+		opacity: 0.9;
+		color: grey;
 	}
 
 	.company img {
