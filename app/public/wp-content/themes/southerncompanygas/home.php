@@ -55,9 +55,7 @@ $i = 0;
     <p>We hold ourselves accountable to our customers first and foremost. To that end, we’re committed to delivering clean, safe, reliable and affordable energy for our customers, our neighbors and our communities.</p>
   </div>
 
-
-
-	<div href="/community" class="image-break pattern dark" style="background-image:url('https://southerncompanygas.com/wp-content/uploads/2019/10/scgco-what-is-natural-gas.jpg');">
+	<div href="/community" class="image-break pattern dark" style="background-image:url('/wp-content/uploads/2019/10/scgco-what-is-natural-gas.jpg');">
     <div class="dimmer"></div>
     <div class="copy copy--large">
       <p class="label">Renewable Natural Gas</p>
@@ -72,7 +70,7 @@ $i = 0;
   </div>
 
   <div class="pattern card-group">
-    <a href="" class="card card--image card--mega" style="background-image:url(https://southerncompanygas.com/wp-content/uploads/2019/09/socogas-history.jpg);">
+    <a href="" class="card card--image card--mega" style="background-image:url(/wp-content/uploads/2019/09/socogas-history.jpg);">
       <div class="card--content">
         <p class="hed">150 years of service</p>
         <p>Uncover our legacy </p>
@@ -80,7 +78,7 @@ $i = 0;
     </a>
     <a href="/about-us/leadership" class="card card--large">
 			<div class="card--featured">
-				<img src="https://southerncompanygas.com/wp-content/uploads/2019/12/kimberly-s-green-leadership.jpg" />
+				<img src="/wp-content/uploads/2019/12/kimberly-s-green-leadership.jpg" />
 			</div>
       <div class="card--content">
         <p class="hed">Leading us into tomorrow</p>
@@ -111,7 +109,7 @@ $i = 0;
 
 	<div class="pattern split split--left-weighted">
     <div class="left">
-      <img class="image" src="https://southerncompanygas.com/wp-content/uploads/2019/12/soco-community.jpg" alt="" />
+      <img class="image" src="/wp-content/uploads/2019/12/soco-community.jpg" alt="" />
     </div>
     <div class="right">
       <div class="copy copy--left">
