@@ -41,6 +41,7 @@ $wpb_all_query = new WP_Query($post_params);
 		<!-- end of the loop -->
 
 	</div>
+	<p>test</p>
 
 <?php wp_reset_postdata(); ?>
 
