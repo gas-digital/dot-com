@@ -59,8 +59,8 @@ $i = 0;
     <div class="dimmer"></div>
     <div class="copy copy--large">
       <p class="label">Renewable Natural Gas</p>
-      <p class="hed hed--large">What is renewable natural gas?</p>
-      <p>Natural gas is the earth’s cleanest fossil fuel and is colorless and odorless in its natural state. It is composed of four hydrocarbon atoms and one carbon atom (CH4 or methane). Learn more:</p>
+      <p class="hed hed--large">Get on the waitlist for future insights about renewable natural gas.</p>
+      <p>RNG is the earth's cleanest fossil fuel and is colorless and odorless in its natural state. It is composed of four hydrocarbon atoms and one carbon atom (CH4 or methane).</p>
 			<?php get_template_part( 'templates/mailchimp-form' ); ?>
     </div>
   </div>
