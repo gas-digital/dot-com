@@ -3282,3 +3282,102 @@ Stack trace:
 [15-Feb-2021 20:04:13 UTC] PHP  21. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
 [15-Feb-2021 20:04:13 UTC] PHP  22. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
 [15-Feb-2021 20:04:13 UTC] PHP  23. FusionSC_RecentPostsCarousel->render() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/southerncompanygas/lib/shortcodes/recent-posts-carousel.php on line 646
+[15-Feb-2021 22:16:36 UTC] PHP Stack trace:
+[15-Feb-2021 22:16:36 UTC] PHP   1. {main}() /Users/barnesy/Projects/dot-com/app/public/index.php:0
+[15-Feb-2021 22:16:36 UTC] PHP   2. require() /Users/barnesy/Projects/dot-com/app/public/index.php:17
+[15-Feb-2021 22:16:36 UTC] PHP   3. require_once() /Users/barnesy/Projects/dot-com/app/public/wp-blog-header.php:19
+[15-Feb-2021 22:16:36 UTC] PHP   4. include() /Users/barnesy/Projects/dot-com/app/public/wp-includes/template-loader.php:106
+[15-Feb-2021 22:16:36 UTC] PHP   5. the_content() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/100-width.php:23
+[15-Feb-2021 22:16:36 UTC] PHP   6. apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/post-template.php:253
+[15-Feb-2021 22:16:36 UTC] PHP   7. WP_Hook->apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/plugin.php:206
+[15-Feb-2021 22:16:36 UTC] PHP   8. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp-hook.php:287
+[15-Feb-2021 22:16:36 UTC] PHP   9. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  10. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  11. FusionSC_Container->render() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP  12. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-content/plugins/fusion-builder/shortcodes/fusion-container.php:535
+[15-Feb-2021 22:16:36 UTC] PHP  13. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  14. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  15. fusion_builder_row() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP  16. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-content/plugins/fusion-builder/shortcodes/fusion-row.php:28
+[15-Feb-2021 22:16:36 UTC] PHP  17. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  18. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  19. FusionSC_Column->render() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP  20. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-content/plugins/fusion-builder/shortcodes/fusion-column.php:572
+[15-Feb-2021 22:16:36 UTC] PHP  21. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  22. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  23. FusionSC_RecentPostsCarousel->render() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/southerncompanygas/lib/shortcodes/recent-posts-carousel.php on line 646
+[15-Feb-2021 22:16:36 UTC] PHP Stack trace:
+[15-Feb-2021 22:16:36 UTC] PHP   1. {main}() /Users/barnesy/Projects/dot-com/app/public/index.php:0
+[15-Feb-2021 22:16:36 UTC] PHP   2. require() /Users/barnesy/Projects/dot-com/app/public/index.php:17
+[15-Feb-2021 22:16:36 UTC] PHP   3. require_once() /Users/barnesy/Projects/dot-com/app/public/wp-blog-header.php:19
+[15-Feb-2021 22:16:36 UTC] PHP   4. include() /Users/barnesy/Projects/dot-com/app/public/wp-includes/template-loader.php:106
+[15-Feb-2021 22:16:36 UTC] PHP   5. the_content() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/100-width.php:23
+[15-Feb-2021 22:16:36 UTC] PHP   6. apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/post-template.php:253
+[15-Feb-2021 22:16:36 UTC] PHP   7. WP_Hook->apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/plugin.php:206
+[15-Feb-2021 22:16:36 UTC] PHP   8. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp-hook.php:287
+[15-Feb-2021 22:16:36 UTC] PHP   9. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  10. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  11. FusionSC_Container->render() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP  12. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-content/plugins/fusion-builder/shortcodes/fusion-container.php:535
+[15-Feb-2021 22:16:36 UTC] PHP  13. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  14. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  15. fusion_builder_row() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP  16. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-content/plugins/fusion-builder/shortcodes/fusion-row.php:28
+[15-Feb-2021 22:16:36 UTC] PHP  17. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  18. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  19. FusionSC_Column->render() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP  20. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-content/plugins/fusion-builder/shortcodes/fusion-column.php:572
+[15-Feb-2021 22:16:36 UTC] PHP  21. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  22. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  23. FusionSC_RecentPostsCarousel->render() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/southerncompanygas/lib/shortcodes/recent-posts-carousel.php on line 646
+[15-Feb-2021 22:16:36 UTC] PHP Stack trace:
+[15-Feb-2021 22:16:36 UTC] PHP   1. {main}() /Users/barnesy/Projects/dot-com/app/public/index.php:0
+[15-Feb-2021 22:16:36 UTC] PHP   2. require() /Users/barnesy/Projects/dot-com/app/public/index.php:17
+[15-Feb-2021 22:16:36 UTC] PHP   3. require_once() /Users/barnesy/Projects/dot-com/app/public/wp-blog-header.php:19
+[15-Feb-2021 22:16:36 UTC] PHP   4. include() /Users/barnesy/Projects/dot-com/app/public/wp-includes/template-loader.php:106
+[15-Feb-2021 22:16:36 UTC] PHP   5. the_content() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/100-width.php:23
+[15-Feb-2021 22:16:36 UTC] PHP   6. apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/post-template.php:253
+[15-Feb-2021 22:16:36 UTC] PHP   7. WP_Hook->apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/plugin.php:206
+[15-Feb-2021 22:16:36 UTC] PHP   8. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp-hook.php:287
+[15-Feb-2021 22:16:36 UTC] PHP   9. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  10. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  11. FusionSC_Container->render() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP  12. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-content/plugins/fusion-builder/shortcodes/fusion-container.php:535
+[15-Feb-2021 22:16:36 UTC] PHP  13. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  14. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  15. fusion_builder_row() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP  16. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-content/plugins/fusion-builder/shortcodes/fusion-row.php:28
+[15-Feb-2021 22:16:36 UTC] PHP  17. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  18. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  19. FusionSC_Column->render() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:16:36 UTC] PHP  20. do_shortcode() /Users/barnesy/Projects/dot-com/app/public/wp-content/plugins/fusion-builder/shortcodes/fusion-column.php:572
+[15-Feb-2021 22:16:36 UTC] PHP  21. preg_replace_callback() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  22. do_shortcode_tag() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:218
+[15-Feb-2021 22:16:36 UTC] PHP  23. FusionSC_RecentPostsCarousel->render() /Users/barnesy/Projects/dot-com/app/public/wp-includes/shortcodes.php:343
+[15-Feb-2021 22:17:36 UTC] PHP Warning:  file_get_contents(fusion-recent-posts-carousel-swiper): failed to open stream: No such file or directory in /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css.php on line 574
+[15-Feb-2021 22:17:36 UTC] PHP Stack trace:
+[15-Feb-2021 22:17:36 UTC] PHP   1. {main}() /Users/barnesy/Projects/dot-com/app/public/index.php:0
+[15-Feb-2021 22:17:36 UTC] PHP   2. require() /Users/barnesy/Projects/dot-com/app/public/index.php:17
+[15-Feb-2021 22:17:36 UTC] PHP   3. wp() /Users/barnesy/Projects/dot-com/app/public/wp-blog-header.php:16
+[15-Feb-2021 22:17:36 UTC] PHP   4. WP->main() /Users/barnesy/Projects/dot-com/app/public/wp-includes/functions.php:1274
+[15-Feb-2021 22:17:36 UTC] PHP   5. do_action_ref_array() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp.php:752
+[15-Feb-2021 22:17:36 UTC] PHP   6. WP_Hook->do_action() /Users/barnesy/Projects/dot-com/app/public/wp-includes/plugin.php:544
+[15-Feb-2021 22:17:36 UTC] PHP   7. WP_Hook->apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp-hook.php:311
+[15-Feb-2021 22:17:36 UTC] PHP   8. Fusion_Dynamic_CSS->init() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp-hook.php:287
+[15-Feb-2021 22:17:36 UTC] PHP   9. Fusion_Dynamic_CSS_File->__construct() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css.php:196
+[15-Feb-2021 22:17:36 UTC] PHP  10. Fusion_Dynamic_CSS_File->can_write() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-file.php:56
+[15-Feb-2021 22:17:36 UTC] PHP  11. Fusion_Dynamic_CSS_File->file() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-file.php:177
+[15-Feb-2021 22:17:36 UTC] PHP  12. Fusion_Dynamic_CSS_Helpers->get_dynamic_css_id() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-file.php:108
+[15-Feb-2021 22:17:36 UTC] PHP  13. Fusion_Dynamic_CSS->generate_final_css() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-helpers.php:359
+[15-Feb-2021 22:17:36 UTC] PHP  14. Fusion_Dynamic_CSS_Helpers->get_dynamic_css() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css.php:276
+[15-Feb-2021 22:17:36 UTC] PHP  15. Fusion_Dynamic_CSS_Helpers->parser() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-helpers.php:376
+[15-Feb-2021 22:17:36 UTC] PHP  16. apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css-helpers.php:194
+[15-Feb-2021 22:17:36 UTC] PHP  17. WP_Hook->apply_filters() /Users/barnesy/Projects/dot-com/app/public/wp-includes/plugin.php:206
+[15-Feb-2021 22:17:36 UTC] PHP  18. Fusion_Dynamic_CSS->add_extra_files() /Users/barnesy/Projects/dot-com/app/public/wp-includes/class-wp-hook.php:287
+[15-Feb-2021 22:17:36 UTC] PHP  19. file_get_contents() /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/Avada/includes/lib/inc/class-fusion-dynamic-css.php:574
+[17-Feb-2021 21:45:59 UTC] PHP Parse error:  syntax error, unexpected 'var' (T_VAR), expecting end of file in /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/southerncompanygas/news.php on line 16
+[17-Feb-2021 21:46:08 UTC] PHP Parse error:  syntax error, unexpected '=' in /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/southerncompanygas/news.php on line 16
+[17-Feb-2021 21:46:12 UTC] PHP Parse error:  syntax error, unexpected '++' (T_INC) in /Users/barnesy/Projects/dot-com/app/public/wp-content/themes/southerncompanygas/news.php on line 34
