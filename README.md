@@ -6,6 +6,7 @@
 # Add your git remotes for WP-Engine
 
 `git add remote staging	git@git.wpengine.com:production/socogasstag.git`
+
 `git add remote production	git@git.wpengine.com:production/socogas.git`
 
 # Confirm remotes
