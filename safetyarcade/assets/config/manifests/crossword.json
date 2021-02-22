@@ -1,0 +1,34 @@
+[
+	{
+		"key" : "close",
+		"url" : "assets/images/global/close.png"
+	},
+	{
+		"key" : "help",
+		"url" : "assets/images/global/help.png"
+	},
+	{
+		"key" : "download",
+		"url" : "assets/images/global/button_download_up.png"
+	},
+	{
+		"key" : "download_down",
+		"url" : "assets/images/global/button_download_down.png"
+	},
+	{
+		"key" : "star",
+		"url" : "assets/images/global/star.png"
+	},
+	{
+		"key" : "ActivityTitle",
+		"url" : "assets/images/global/ActivityTitle.png"
+	},
+	{
+		"key" : "character",
+		"url" : "assets/images/crossword/boy_glasses.png"
+	},
+	{
+		"key" : "completionbadge",
+		"url" : "assets/images/global/youdidit_badge.png"
+	}
+]

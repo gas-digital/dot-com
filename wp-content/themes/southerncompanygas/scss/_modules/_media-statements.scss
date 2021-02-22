@@ -1,0 +1,38 @@
+.page-template-page-media-statements{
+	.post{
+		border: 1px solid #DCDCDC;
+		padding: 30px;
+	}
+	.fusion-meta-info{
+		border: none;
+		.fusion-alignleft,
+		.fusion-alignright{
+			clear: both;
+			display: block;
+			float: none;
+			margin: 0;
+		}
+		.fusion-alignright{
+			margin-top: 30px;
+		}
+		.fusion-read-more,
+		.fusion-read-more:after{
+			color: var(--sco-blue);
+			&:hover{
+				color: var(--sco-blue-dark);
+			}
+		}
+	}
+}
+
+.media-statement-update{
+	h1.entry-title{
+		margin-bottom: 10px;
+	}
+}
+.media-update-meta{
+	.fusion-meta-info{
+		border: none;
+		margin-top: 0;
+	}
+}

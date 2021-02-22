@@ -1,0 +1,17 @@
+@import "_functions/functions";
+
+$themeColor: #007aff !default;
+$colors: (white: #ffffff, black: #000000) !default;
+
+@import "_components/core",
+		"_components/controller",
+		"_components/effect-coverflow",
+		"_components/effect-cube",
+		"_components/effect-fade",
+		"_components/effect-flip",
+		"_components/lazy",
+		"_components/navigation",
+		"_components/pagination",
+		"_components/scrollbar",
+		"_components/thumbs",
+		"_components/zoom";

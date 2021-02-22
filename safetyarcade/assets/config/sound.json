@@ -1,0 +1,124 @@
+{
+	"music" : {
+		"path": "assets/sound/music/",
+		"sounds" : [
+
+		]
+	},
+	"sfx" : {
+		"path": "assets/sound/sfx/",
+		"volume" : 0.3,
+		"sounds" : [
+			{
+				"id": "bellyes",
+				"src": "bellyes.mp3"
+			},
+			{
+				"id": "bonkno",
+				"src": "bonkno.mp3"
+			},
+			{
+				"id": "appliance_correct",
+				"src": "811dig_appliance_correct.mp3"
+			},
+			{
+				"id": "color_grab",
+				"src": "811dig_color_grab.mp3"
+			},
+			{
+				"id": "color_paint",
+				"src": "811dig_color_paint.mp3"
+			},
+			{
+				"id": "flag_correct",
+				"src": "811dig_flag_correct.mp3"
+			},
+			{
+				"id": "flag_error",
+				"src": "811dig_flag_error.mp3"
+			},
+			{
+				"id": "general_alldone",
+				"src": "811dig_general_alldone.mp3"
+			},
+			{
+				"id": "general_exit",
+				"src": "811dig_general_exit.mp3"
+			},
+			{
+				"id": "general_levelcomplete",
+				"src": "811dig_general_levelcomplete.mp3"
+			},
+			{
+				"id": "general_select",
+				"src": "811dig_general_select.mp3"
+			},
+			{
+				"id": "generalhover",
+				"src": "811dig_generalhover.mp3"
+			},
+			{
+				"id": "hookup_error",
+				"src": "811dig_hookup_error.mp3"
+			},
+			{
+				"id": "hookup_house",
+				"src": "811dig_hookup_house.mp3"
+			},
+			{
+				"id": "hookup_square",
+				"src": "811dig_hookup_square.mp3"
+			},
+			{
+				"id": "math_bubbleappear",
+				"src": "811dig_math_bubbleappear.mp3"
+			},
+			{
+				"id": "math_bubblegrab",
+				"src": "811dig_math_bubblegrab.mp3"
+			},
+			{
+				"id": "math_correct",
+				"src": "811dig_math_correct.mp3"
+			},
+			{
+				"id": "math_error",
+				"src": "811dig_math_error.mp3"
+			},
+			{
+				"id": "maze_end",
+				"src": "811dig_maze_end.mp3"
+			},
+			{
+				"id": "maze_item",
+				"src": "811dig_maze_item.mp3"
+			},
+			{
+				"id": "maze_move",
+				"src": "811dig_maze_move.mp3"
+			},
+			{
+				"id": "scramble_moveletter",
+				"src": "811dig_scramble_moveletter.mp3"
+			},
+			{
+				"id": "scramble_wordcomplete",
+				"src": "811dig_scramble_wordcomplete.mp3"
+			},
+			{
+				"id": "search_correctword",
+				"src": "811dig_search_correctword.mp3"
+			},
+			{
+				"id": "search_letter",
+				"src": "811dig_search_letter.mp3"
+			}
+		]
+	},
+	"vo" : {
+		"path": "assets/sound/vo/",
+		"sounds" : [
+
+		]
+	}
+}

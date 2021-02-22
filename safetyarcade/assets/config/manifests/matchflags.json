@@ -1,0 +1,78 @@
+[
+	{
+		"key" : "flag1",
+		"url" : "assets/images/matchflags/flag1.png"
+	},
+	{
+		"key" : "flag2",
+		"url" : "assets/images/matchflags/flag2.png"
+	},
+	{
+		"key" : "flag3",
+		"url" : "assets/images/matchflags/flag3.png"
+	},
+	{
+		"key" : "flag4",
+		"url" : "assets/images/matchflags/flag4.png"
+	},
+	{
+		"key" : "flag5",
+		"url" : "assets/images/matchflags/flag5.png"
+	},
+	{
+		"key" : "flag6",
+		"url" : "assets/images/matchflags/flag6.png"
+	},
+	{
+		"key" : "flag7",
+		"url" : "assets/images/matchflags/flag7.png"
+	},
+	{
+		"key" : "flag8",
+		"url" : "assets/images/matchflags/flag8.png"
+	},
+	{
+		"key" : "close",
+		"url" : "assets/images/global/close.png"
+	},
+	{
+		"key" : "help",
+		"url" : "assets/images/global/help.png"
+	},
+	{
+		"key" : "download",
+		"url" : "assets/images/global/button_download_up.png"
+	},
+	{
+		"key" : "download_down",
+		"url" : "assets/images/global/button_download_down.png"
+	},
+	{
+		"key" : "star",
+		"url" : "assets/images/global/star.png"
+	},
+	{
+		"key" : "ActivityTitle",
+		"url" : "assets/images/global/ActivityTitle.png"
+	},
+	{
+		"key" : "character",
+		"url" : "assets/images/matchflags/GirlHardHat.png"
+	},
+	{
+		"key" : "completionbadge",
+		"url" : "assets/images/global/youdidit_badge.png"
+	},
+	{
+		"key" : "excl_oopstryagain",
+		"url" : "assets/images/global/excl_oopstryagain.png"
+	},
+	{
+		"key" : "excl_greatjob",
+		"url" : "assets/images/global/excl_greatjob.png"
+	},
+	{
+		"key" : "excl_youreapro",
+		"url" : "assets/images/global/excl_youreapro.png"
+	}
+]

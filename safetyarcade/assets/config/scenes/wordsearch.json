@@ -1,0 +1,187 @@
+{
+	"elements" : [
+		{
+			"name" :  "bgRect",
+			"type" : "rect",
+			"width" : 1536,
+			"height" : 768,
+			"renderLayer" : "bg",
+			"x" : 0,
+			"y" : 0,
+			"color" : "#ffffff"
+		},
+		{ 
+			"name" : "wordBank", 
+			"type" : "group", 
+			"x" : "centerX-=232", 
+			"y" :  "safeBottom-=220", 
+			"anchor" : 0,
+			"elements": [
+				{
+					"name" : "bankBg", 
+					"type" : "rect", 
+					"x" : 0, 
+					"y" :  0, 
+					"width": 620,
+					"height" : 200,
+					"anchor" : 0,
+					"color" : "#ffffff",
+					"lineWidth" : 5, 
+					"lineColor" : "0x0079ba", 
+					"lineAlpha" : 1
+				}
+			]
+		},
+		{ 
+			"name" : "finalSelections", 
+			"type" : "group", 
+			"x" : 0, 
+			"y" :  0
+		},
+		{ 
+			"name" : "selectionContainer", 
+			"type" : "group", 
+			"x" : 0, 
+			"y" :  0, 
+			"anchor" : 0.5
+		},
+		{
+			"name" : "activityInstructions", 
+			"type" : "group", 
+			"x" : "left+=25", 
+			"y" :  100, 
+			"responsive" : true,
+			"elements" : [
+				{ 
+					"name" : "activityTitle", 
+					"type" : "sprite", 
+					"asset" : "ActivityTitle", 
+					"x" : 0, 
+					"y" :  0, 
+					"interactive" : true
+				},
+				{ 
+					"name" : "activityInstruxText", 
+					"type" : "text", 
+					"text" : "Find the hidden words from the word search list.", 
+					"style" : {
+						"fontFamily" : ["BowlerHand", "Helvetica", "Arial"],
+						"fontSize": 24,
+						"fill": "#000000",
+						"wordWrap" : true,
+						"wordWrapWidth" : 230
+					},
+					"x" : 0, 
+					"y" :  80
+				}
+			]
+		},
+		{ 
+			"name" : "character",
+			"type" : "sprite", 
+			"asset" : "character",
+			"x" : "safeLeft+=20",
+			"y" : "safeTop+=300",
+			"scale" : 0.5
+		},
+		{ 
+			"name" : "closeButton",
+			"type" : "sprite", 
+			"asset" : "close",
+			"x" : "right-=60",
+			"y" : "safeTop+=20",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "helpButton",
+			"type" : "sprite", 
+			"asset" : "help",
+			"x" : "right-=60",
+			"y" : "safeTop+=90",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "downloadButton",
+			"type" : "button", 
+			"up" : "download",
+			"over" : "download",
+			"down" : "download_down",
+			"x" : "right-=60",
+			"y" : "safeTop+=160",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true,
+			"visible": false
+		}
+	],
+	"interactions" : [
+		{ 
+			"object" : "closeButton" , 
+			"onPress" : "endActivity",
+			"args" : true
+		},
+		{ 
+			"object" : "helpButton" , 
+			"onPress" : "showHelpMenu",
+			"args" : true
+		},
+		{ 
+			"object" : "downloadButton" , 
+			"onPress" : "downloadActivity",
+			"args" : true
+		}
+	],
+	"boardVariants" : [
+		{
+			"boardLayout" : [
+				"N", "A", "T", "U", "R", "A", "L", "G", "A", "S", "?",
+				"S", "M", "E", "L", "L", "?", "?", "?", "?", "?", "A",
+				"N", "?", "?", "?", "S", "A", "F", "E", "T", "Y", "C",
+				"I", "?", "O", "D", "O", "R", "?", "?", "?", "?", "T",
+				"F", "?", "?", "?", "P", "I", "P", "E", "S", "?", "F",
+				"F", "A", "W", "A", "R", "E", "N", "E", "S", "S", "A",
+				"Y", "?", "?", "?", "?", "?", "?", "?", "?", "?", "S",
+				"R", "O", "T", "T", "E", "N", "E", "G", "G", "S", "T"
+			],
+			"targetWords" : [
+				"ACTFAST",
+				"NATURALGAS",
+				"SMELL",
+				"AWARENESS",
+				"ROTTENEGGS",
+				"SNIFFY",
+				"PIPES",
+				"ODOR",
+				"SAFETY"
+			]
+		},
+		{
+			"boardLayout" : [
+				"?", "R", "O", "T", "T", "E", "N", "E", "G", "G", "S",
+				"S", "A", "F", "E", "T", "Y", "?", "?", "A", "?", "H",
+				"M", "?", "?", "?", "?", "?", "?", "D", "C", "?", "E",
+				"E", "N", "E", "R", "G", "Y", "?", "A", "T", "?", "A",
+				"L", "?", "?", "?", "?", "?", "?", "M", "F", "?", "T",
+				"L", "?", "?", "?", "?", "?", "?", "A", "A", "?", "I",
+				"?", "D", "I", "G", "G", "I", "N", "G", "S", "?", "N",
+				"P", "I", "P", "E", "L", "I", "N", "E", "T", "?", "G"
+			],
+			"targetWords" : [
+				"ACTFAST",
+				"ROTTENEGGS",
+				"SMELL",
+				"SAFETY",
+				"ENERGY",
+				"HEATING",
+				"PIPELINE",
+				"DAMAGE",
+				"DIGGING"
+			]
+		}
+	],
+	"letterPool" : ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+}

@@ -1,0 +1,42 @@
+[
+	{
+		"key" : "close",
+		"url" : "assets/images/global/close.png"
+	},
+	{
+		"key" : "help",
+		"url" : "assets/images/global/help.png"
+	},
+	{
+		"key" : "download",
+		"url" : "assets/images/global/button_download_up.png"
+	},
+	{
+		"key" : "download_down",
+		"url" : "assets/images/global/button_download_down.png"
+	},
+	{
+		"key" : "star",
+		"url" : "assets/images/global/star.png"
+	},
+	{
+		"key" : "ActivityTitle",
+		"url" : "assets/images/global/ActivityTitle.png"
+	},
+	{
+		"key" : "character",
+		"url" : "assets/images/wordscramble/girl.png"
+	},
+	{
+		"key" : "completionbadge",
+		"url" : "assets/images/global/youdidit_badge.png"
+	},
+	{
+		"key" : "excl_greatjob",
+		"url" : "assets/images/global/excl_greatjob.png"
+	},
+	{
+		"key" : "excl_youreapro",
+		"url" : "assets/images/global/excl_youreapro.png"
+	}
+]

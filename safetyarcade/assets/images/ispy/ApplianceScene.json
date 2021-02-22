@@ -1,0 +1,172 @@
+{"frames": {
+
+"appliance_dryer.png":
+{
+	"frame": {"x":737,"y":1974,"w":72,"h":103},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":103},
+	"sourceSize": {"w":72,"h":103}
+},
+"appliance_fireplace.png":
+{
+	"frame": {"x":941,"y":1934,"w":84,"h":60},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":60},
+	"sourceSize": {"w":84,"h":60}
+},
+"appliance_furnace.png":
+{
+	"frame": {"x":298,"y":1874,"w":77,"h":132},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":77,"h":132},
+	"sourceSize": {"w":77,"h":132}
+},
+"appliance_generator.png":
+{
+	"frame": {"x":856,"y":1845,"w":98,"h":65},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":65},
+	"sourceSize": {"w":98,"h":65}
+},
+"appliance_grill.png":
+{
+	"frame": {"x":737,"y":1845,"w":127,"h":117},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":117},
+	"sourceSize": {"w":127,"h":117}
+},
+"appliance_poolheater.png":
+{
+	"frame": {"x":842,"y":1974,"w":66,"h":97},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":97},
+	"sourceSize": {"w":66,"h":97}
+},
+"appliance_refrigerator.png":
+{
+	"frame": {"x":377,"y":1845,"w":104,"h":194},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":194},
+	"sourceSize": {"w":104,"h":194}
+},
+"appliance_stove.png":
+{
+	"frame": {"x":923,"y":1845,"w":54,"h":87},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":87},
+	"sourceSize": {"w":54,"h":87}
+},
+"appliance_waterheater.png":
+{
+	"frame": {"x":483,"y":1845,"w":55,"h":178},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":55,"h":178},
+	"sourceSize": {"w":55,"h":178}
+},
+"bg_grass.png":
+{
+	"frame": {"x":2,"y":2,"w":1547,"h":161},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1547,"h":161},
+	"sourceSize": {"w":1547,"h":161}
+},
+"bg_tree.png":
+{
+	"frame": {"x":356,"y":1019,"w":820,"h":824},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":820,"h":824},
+	"sourceSize": {"w":820,"h":824}
+},
+"char_apron.png":
+{
+	"frame": {"x":2,"y":1874,"w":101,"h":171},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":101,"h":171},
+	"sourceSize": {"w":101,"h":171}
+},
+"char_book.png":
+{
+	"frame": {"x":105,"y":1874,"w":94,"h":166},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":94,"h":166},
+	"sourceSize": {"w":94,"h":166}
+},
+"char_guitar.png":
+{
+	"frame": {"x":201,"y":1874,"w":95,"h":155},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":95,"h":155},
+	"sourceSize": {"w":95,"h":155}
+},
+"char_redhat.png":
+{
+	"frame": {"x":649,"y":1845,"w":86,"h":176},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":176},
+	"sourceSize": {"w":86,"h":176}
+},
+"char_stripeshirt.png":
+{
+	"frame": {"x":540,"y":1845,"w":107,"h":177},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":107,"h":177},
+	"sourceSize": {"w":107,"h":177}
+},
+"house_attic.png":
+{
+	"frame": {"x":1551,"y":2,"w":979,"h":451},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":979,"h":451},
+	"sourceSize": {"w":979,"h":451}
+},
+"house_basement.png":
+{
+	"frame": {"x":356,"y":165,"w":1190,"h":351},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1190,"h":351},
+	"sourceSize": {"w":1190,"h":351}
+},
+"house_floor1.png":
+{
+	"frame": {"x":377,"y":518,"w":1150,"h":499},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1150,"h":499},
+	"sourceSize": {"w":1150,"h":499}
+},
+"house_floor2.png":
+{
+	"frame": {"x":2,"y":983,"w":889,"h":352},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":889,"h":352},
+	"sourceSize": {"w":889,"h":352}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "ApplianceScene.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:58f739df524453ec4de9d3ce8c8ff9b7:a1b7661de80509501898ff4256f93496:78f6755b80bd3780fc23e5ee54e1f981$"
+}
+}

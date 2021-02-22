@@ -1,0 +1,202 @@
+{
+	"elements" : [
+		{
+			"name" :  "bgRect",
+			"type" : "rect",
+			"width" : 1536,
+			"height" : 768,
+			"renderLayer" : "bg",
+			"x" : 0,
+			"y" : 0,
+			"color" : "#ffffff"
+		},
+		{
+			"name" : "activityInstructions", 
+			"type" : "group", 
+			"x" : "left+=25", 
+			"y" :  100, 
+			"responsive" : true,
+			"elements" : [
+				{ 
+					"name" : "activityTitle", 
+					"type" : "sprite", 
+					"asset" : "ActivityTitle", 
+					"x" : 0, 
+					"y" :  0, 
+					"interactive" : true
+				},
+				{ 
+					"name" : "activityInstruxText", 
+					"type" : "text", 
+					"text" : "Can you identify the safety flags? Drag the colored flag to the correct utility.", 
+					"style" : {
+						"fontFamily" : ["BowlerHand", "Helvetica", "Arial"],
+						"fontSize": 24,
+						"fill": "#000000",
+						"wordWrap" : true,
+						"wordWrapWidth" : 250
+					},
+					"x" : 0, 
+					"y" :  80
+				}
+			]
+		},
+		{ 
+			"name" : "character",
+			"type" : "sprite", 
+			"asset" : "character",
+			"x" : "safeLeft+=50",
+			"y" : "safeTop+=350"
+		},
+		{
+			"name" : "textBgGroup", 
+			"type" : "group", 
+			"x" : 0, 
+			"y" :  0, 
+			"responsive" : true,
+			"elements" : []
+		},
+		{
+			"name" : "textGroup", 
+			"type" : "group", 
+			"x" : 0, 
+			"y" :  0, 
+			"responsive" : true,
+			"elements" : []
+		},
+		{
+			"name" : "flagGroup", 
+			"type" : "group", 
+			"x" : 0, 
+			"y" :  0, 
+			"responsive" : true,
+			"elements" : []
+		},
+		{ 
+			"name" : "closeButton",
+			"type" : "sprite", 
+			"asset" : "close",
+			"x" : "right-=60",
+			"y" : "safeTop+=20",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "helpButton",
+			"type" : "sprite", 
+			"asset" : "help",
+			"x" : "right-=60",
+			"y" : "safeTop+=90",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "downloadButton",
+			"type" : "button", 
+			"up" : "download",
+			"over" : "download",
+			"down" : "download_down",
+			"x" : "right-=60",
+			"y" : "safeTop+=160",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true,
+			"visible": false
+		}
+	],
+	"interactions" : [
+		{ 
+			"object" : "closeButton" , 
+			"onPress" : "endActivity",
+			"args" : true
+		},
+		{ 
+			"object" : "helpButton" , 
+			"onPress" : "showHelpMenu",
+			"args" : true
+		},
+		{ 
+			"object" : "downloadButton" , 
+			"onPress" : "downloadActivity",
+			"args" : true
+		}
+	],
+	"flagData" : [
+		{
+			"name" : "flag1",
+			"color" : "yellow",
+			"type" : "gas"
+		},
+		{
+			"name" : "flag2",
+			"color" : "red",
+			"type" : "electric"
+		},
+		{
+			"name" : "flag3",
+			"color" : "orange",
+			"type" : "communication"
+		},
+		{
+			"name" : "flag4",
+			"color" : "blue",
+			"type" : "water"
+		},
+		{
+			"name" : "flag5",
+			"color" : "purple",
+			"type" : "irrigation"
+		},
+		{
+			"name" : "flag6",
+			"color" : "green",
+			"type" : "sewer"
+		},
+		{
+			"name" : "flag7",
+			"color" : "white",
+			"type" : "excavation"
+		},
+		{
+			"name" : "flag8",
+			"color" : "pink",
+			"type" : "survey"
+		}
+	],
+	"textData" : [
+		{
+			"text" : "Gas, oil, or petroleum",
+			"type" : "gas"
+		},
+		{
+			"text" : "Sewer",
+			"type" : "sewer"
+		},
+		{
+			"text" : "Proposed excavation",
+			"type" : "excavation"
+		},
+		{
+			"text" : "Reclaimed water, irrigation",
+			"type" : "irrigation"
+		},
+		{
+			"text" : "Potable water",
+			"type" : "water"
+		},
+		{
+			"text" : "Electric",
+			"type" : "electric"
+		},
+		{
+			"text" : "Temporary survey",
+			"type" : "survey"
+		},
+		{
+			"text" : "Communications",
+			"type" : "communication"
+		}
+	]
+}

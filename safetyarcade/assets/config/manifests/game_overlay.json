@@ -1,0 +1,10 @@
+[
+	{
+		"key" : "load_bg",
+		"url" : "assets/images/global/loading_bar_container.png"
+	},
+	{
+		"key" : "load_bar",
+		"url" : "assets/images/global/loading_bar_fill.png"
+	}
+]

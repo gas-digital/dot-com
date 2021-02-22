@@ -1,0 +1,138 @@
+[
+	{
+		"key" : "Wall_E",
+		"url" : "assets/images/maze/Wall_E.png"
+	},
+	{
+		"key" : "Wall_ES",
+		"url" : "assets/images/maze/Wall_ES.png"
+	},
+	{
+		"key" : "Wall_ESW",
+		"url" : "assets/images/maze/Wall_ESW.png"
+	},
+	{
+		"key" : "Wall_EW",
+		"url" : "assets/images/maze/Wall_EW.png"
+	},
+	{
+		"key" : "Wall_N",
+		"url" : "assets/images/maze/Wall_N.png"
+	},
+	{
+		"key" : "Wall_NE",
+		"url" : "assets/images/maze/Wall_NE.png"
+	},
+	{
+		"key" : "Wall_NES",
+		"url" : "assets/images/maze/Wall_NES.png"
+	},
+	{
+		"key" : "Wall_NESW",
+		"url" : "assets/images/maze/Wall_NESW.png"
+	},
+	{
+		"key" : "Wall_NEW",
+		"url" : "assets/images/maze/Wall_NEW.png"
+	},
+	{
+		"key" : "Wall_NS",
+		"url" : "assets/images/maze/Wall_NS.png"
+	},
+	{
+		"key" : "Wall_NSW",
+		"url" : "assets/images/maze/Wall_NSW.png"
+	},
+	{
+		"key" : "Wall_NW",
+		"url" : "assets/images/maze/Wall_NW.png"
+	},
+	{
+		"key" : "Wall_S",
+		"url" : "assets/images/maze/Wall_S.png"
+	},
+	{
+		"key" : "Wall_SW",
+		"url" : "assets/images/maze/Wall_SW.png"
+	},
+	{
+		"key" : "Wall_W",
+		"url" : "assets/images/maze/Wall_W.png"
+	},
+	{
+		"key" : "Wall_X",
+		"url" : "assets/images/maze/Wall_X.png"
+	},
+	{
+		"key" : "close",
+		"url" : "assets/images/global/close.png"
+	},
+	{
+		"key" : "help",
+		"url" : "assets/images/global/help.png"
+	},
+	{
+		"key" : "download",
+		"url" : "assets/images/global/button_download_up.png"
+	},
+	{
+		"key" : "download_down",
+		"url" : "assets/images/global/button_download_down.png"
+	},
+	{
+		"key" : "star",
+		"url" : "assets/images/global/star.png"
+	},
+	{
+		"key" : "ActivityTitle",
+		"url" : "assets/images/global/ActivityTitle.png"
+	},
+	{
+		"key" : "boy",
+		"url" : "assets/images/maze/boy_maze.png"
+	},
+	{
+		"key" : "flag",
+		"url" : "assets/images/maze/flag.png"
+	},
+	{
+		"key" : "idbadge",
+		"url" : "assets/images/maze/idbadge.png"
+	},
+	{
+		"key" : "laptop",
+		"url" : "assets/images/maze/laptop.png"
+	},
+	{
+		"key" : "notebook",
+		"url" : "assets/images/maze/notebook.png"
+	},
+	{
+		"key" : "safetyvest",
+		"url" : "assets/images/maze/safetyvest.png"
+	},
+	{
+		"key" : "truck",
+		"url" : "assets/images/maze/truck.png"
+	},
+	{
+		"key" : "character",
+		"url" : "assets/images/maze/scientist.png"
+	},
+	{
+		"key" : "completionbadge",
+		"url" : "assets/images/global/youdidit_badge.png"
+	},
+	{
+		"key" : "excl_almost_there",
+		"url" : "assets/images/global/excl_almost_there.png"
+	},
+	{
+		"key" : "excl_awesomejob",
+		"url" : "assets/images/global/excl_awesomejob.png"
+	},
+	{
+		"key" : "excl_nicemove",
+		"url" : "assets/images/global/excl_nicemove.png"
+	}
+]

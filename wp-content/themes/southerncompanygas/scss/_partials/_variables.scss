@@ -1,0 +1,25 @@
+$colors: (
+	'red': #EC2424,
+	'red-medium': #9C2128,
+	'red-dark': #520B13,
+	'green': #B2D235,
+	'green-medium': #508D35,
+	'green-dark': #144F23,
+	'blue': #35BCF1,
+	'blue-medium': #227DBA,
+	'blue-dark': #08314B,
+	'orange': #F2B02A,
+	'orange-medium': #E15B29,
+	'orange-dark': #52251D,
+	'teal': #2BAB9F,
+	'teal-medium': #17685F,
+	'grey': #0A4039,
+	'grey-medium': #8A8B89,
+	'grey-dark': #636363
+);
+
+:root{
+	@each $color, $hex in $colors {
+		--sco-#{$color}: #{$hex};
+	}
+}

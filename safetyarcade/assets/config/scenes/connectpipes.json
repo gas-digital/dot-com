@@ -1,0 +1,418 @@
+{
+	"elements" : [
+		{
+			"name" :  "bgRect",
+			"type" : "rect",
+			"width" : 1536,
+			"height" : 768,
+			"renderLayer" : "bg",
+			"x" : 0,
+			"y" : 0,
+			"color" : "#ffffff"
+		},
+		{ 
+			"name" : "grasspatch",
+			"type" : "tsprite", 
+			"asset" : "grasspatch",
+			"x" : -1000,
+			"y" : "safeBottom-=85",
+			"width" : 3000,
+			"height" : 142
+		},
+		{ 
+			"name" : "character1",
+			"type" : "sprite", 
+			"asset" : "character1",
+			"x" : "safeLeft-=50",
+			"y" : "safeBottom-=300"
+		},
+		{ 
+			"name" : "character2",
+			"type" : "sprite", 
+			"asset" : "character2",
+			"x" : "safeLeft+=100",
+			"y" : "safeBottom-=300"
+		},
+		{
+			"name" :  "gridbg",
+			"type" : "rect",
+			"width" : 635,
+			"height" : 725,
+			"x" : "safeLeft+=290",
+			"y" : 24,
+			"color" : "#739b3f"
+		},
+		{ 
+			"name" : "gridContainer",
+			"type" : "group", 
+			"x" : 0,
+			"y" : 0
+		},
+		{ 
+			"name" : "pathContainer", 
+			"type" : "group", 
+			"x" : 0, 
+			"y" :  0, 
+			"anchor" : 0
+		},
+		{ 
+			"name" : "house", 
+			"type" : "sprite", 
+			"asset" : "house", 
+			"x" : 0, 
+			"y" :  0
+		},
+		{ 
+			"name" : "communication", 
+			"type" : "sprite", 
+			"asset" : "communication", 
+			"x" : 0, 
+			"y" :  0,
+			"anchor" : 0.5,
+			"interactive" : true
+		},
+		{ 
+			"name" : "gas", 
+			"type" : "sprite", 
+			"asset" : "gas", 
+			"x" : 0, 
+			"y" :  0,
+			"anchor" : 0.5,
+			"interactive" : true
+		},
+		{ 
+			"name" : "power", 
+			"type" : "sprite", 
+			"asset" : "power", 
+			"x" : 0, 
+			"y" :  0,
+			"anchor" : 0.5,
+			"interactive" : true
+		},
+		{ 
+			"name" : "water", 
+			"type" : "sprite", 
+			"asset" : "water", 
+			"x" : 0, 
+			"y" :  0,
+			"anchor" : 0.5,
+			"interactive" : true
+		},
+		{ 
+			"name" : "treeGroup1", 
+			"type" : "sprite", 
+			"asset" : "trees1", 
+			"x" : 0, 
+			"y" :  0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "treeGroup2", 
+			"type" : "sprite", 
+			"asset" : "trees2", 
+			"x" : 0, 
+			"y" :  0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "treeGroup3", 
+			"type" : "sprite", 
+			"asset" : "trees3", 
+			"x" : 0, 
+			"y" :  0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "treeGroup4", 
+			"type" : "sprite", 
+			"asset" : "trees4", 
+			"x" : 0, 
+			"y" :  0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "treeGroup5", 
+			"type" : "sprite", 
+			"asset" : "trees1", 
+			"x" : 0, 
+			"y" :  0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "treeGroup6", 
+			"type" : "sprite", 
+			"asset" : "trees2", 
+			"x" : 0, 
+			"y" :  0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "treeGroup7", 
+			"type" : "sprite", 
+			"asset" : "trees3", 
+			"x" : 0, 
+			"y" :  0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "treeGroup8", 
+			"type" : "sprite", 
+			"asset" : "trees4", 
+			"x" : 0, 
+			"y" :  0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "treeGroup9", 
+			"type" : "sprite", 
+			"asset" : "trees1", 
+			"x" : 0, 
+			"y" :  0,
+			"interactive" : true
+		},
+		{ 
+			"name" : "closeButton",
+			"type" : "sprite", 
+			"asset" : "close",
+			"x" : "right-=60",
+			"y" : "safeTop+=20",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "helpButton",
+			"type" : "sprite", 
+			"asset" : "help",
+			"x" : "right-=60",
+			"y" : "safeTop+=90",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true
+		},
+		{ 
+			"name" : "downloadButton",
+			"type" : "button", 
+			"up" : "download",
+			"over" : "download",
+			"down" : "download_down",
+			"x" : "right-=60",
+			"y" : "safeTop+=160",
+			"responsive" : "true",
+			"scale" : "0.5",
+			"interactive" : true,
+			"visible": false
+		},
+		{
+			"name" : "activityInstructions", 
+			"type" : "group", 
+			"x" : "left+=25", 
+			"y" :  50, 
+			"responsive" : true,
+			"elements" : [
+				{ 
+					"name" : "activityTitle", 
+					"type" : "sprite", 
+					"asset" : "ActivityTitle", 
+					"x" : 0, 
+					"y" :  0, 
+					"interactive" : true
+				},
+				{ 
+					"name" : "activityInstruxText", 
+					"type" : "text", 
+					"text" : "Connect the utilities to the home without crossing the pipes and deliver natural gas, electricity, water and cable television safely underground.", 
+					"style" : {
+						"fontFamily" : ["BowlerHand", "Helvetica", "Arial"],
+						"fontSize": 24,
+						"fill": "#000000",
+						"wordWrap" : true,
+						"wordWrapWidth" : 250
+					},
+					"x" : 0, 
+					"y" :  80
+				}
+			]
+		}
+	],
+	"interactions" : [
+		{ 
+			"object" : "closeButton" , 
+			"onPress" : "endActivity",
+			"args" : true
+		},
+		{ 
+			"object" : "helpButton" , 
+			"onPress" : "showHelpMenu",
+			"args" : true
+		},
+		{ 
+			"object" : "downloadButton" , 
+			"onPress" : "downloadActivity",
+			"args" : true
+		},
+		{ 
+			"object" : "gas" , 
+			"onPress" : "onUtilitySelected",
+			"args" : "gas"
+		},
+		{ 
+			"object" : "power" , 
+			"onPress" : "onUtilitySelected",
+			"args" : "power"
+		},
+		{ 
+			"object" : "water" , 
+			"onPress" : "onUtilitySelected",
+			"args" : "water"
+		},
+		{ 
+			"object" : "communication" , 
+			"onPress" : "onUtilitySelected",
+			"args" : "communication"
+		}
+	],
+	"utilities" : {
+		"gas" : {
+			"type" : "gas",
+			"color" : "#ffde17",
+			"startPos" : [0, 6],
+			"endPos" : [3, 2],
+			"connectPos" : [3, 1],
+			"finalPath": [
+				[0, 6],
+				[0, 5],
+				[1, 5],
+				[1, 4],
+				[1, 3],
+				[0, 3],
+				[0, 2],
+				[0, 1],
+				[1, 1],
+				[2, 1],
+				[3, 1],
+				[3, 2]
+			]
+		},
+		"power" : {
+			"type" : "power",
+			"color" : "#ed1c24",
+			"startPos" : [3, 5],
+			"endPos" : [4, 3],
+			"connectPos" : [5, 3],
+			"finalPath": [
+				[3, 5],
+				[4, 5],
+				[5, 5],
+				[6, 5],
+				[6, 4],
+				[6, 3],
+				[5, 3],
+				[4, 3]
+			]
+		},
+		"water" : {
+			"type" : "water",
+			"color" : "#21409a",
+			"startPos" : [0, 0],
+			"endPos" : [4, 2],
+			"connectPos" : [5, 2],
+			"finalPath": [
+				[0, 0],
+				[1, 0],
+				[2, 0],
+				[3, 0],
+				[4, 0],
+				[5, 0],
+				[6, 0],
+				[6, 1],
+				[6, 2],
+				[5, 2],
+				[4, 2]
+			]
+		},
+		"communication" : {
+			"type" : "communication",
+			"color" : "#f26522",
+			"startPos" : [7, 0],
+			"endPos" : [3, 3],
+			"connectPos" : [3, 4],
+			"finalPath": [
+				[7, 0],
+				[7, 1],
+				[7, 2],
+				[7, 3],
+				[7, 4],
+				[7, 5],
+				[7, 6],
+				[6, 6],
+				[5, 6],
+				[4, 6],
+				[3, 6],
+				[2, 6],
+				[2, 5],
+				[2, 4],
+				[3, 4],
+				[3, 3]
+			]
+		}
+	},
+	"boardLayout" : [
+		{ 
+			"name" : "house", 
+			"gridCoords" : [3, 2]
+		},
+		{ 
+			"name" : "communication", 
+			"gridCoords" : [7, 0]
+		},
+		{ 
+			"name" : "gas", 
+			"gridCoords" : [0, 6]
+		},
+		{ 
+			"name" : "power", 
+			"gridCoords" : [3, 5]
+		},
+		{ 
+			"name" : "water", 
+			"gridCoords" : [0, 0]
+		},
+		{ 
+			"name" : "treeGroup1", 
+			"gridCoords" : [0, 4]
+		},
+		{ 
+			"name" : "treeGroup2", 
+			"gridCoords" : [1, 2]
+		},
+		{ 
+			"name" : "treeGroup3", 
+			"gridCoords" : [1, 6]
+		},
+		{ 
+			"name" : "treeGroup4", 
+			"gridCoords" : [2, 2]
+		},
+		{ 
+			"name" : "treeGroup5", 
+			"gridCoords" : [2, 3]
+		},
+		{ 
+			"name" : "treeGroup6", 
+			"gridCoords" : [4, 1]
+		},
+		{ 
+			"name" : "treeGroup7", 
+			"gridCoords" : [4, 4]
+		},
+		{ 
+			"name" : "treeGroup8", 
+			"gridCoords" : [5, 1]
+		},
+		{ 
+			"name" : "treeGroup9", 
+			"gridCoords" : [5, 4]
+		}
+	]
+}

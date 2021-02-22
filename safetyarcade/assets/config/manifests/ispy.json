@@ -1,0 +1,42 @@
+[
+	{
+		"key" : "ApplianceScene",
+		"url" : "assets/images/ispy/ApplianceScene.json"
+	},
+	{
+		"key" : "arrow",
+		"url" : "assets/images/ispy/arrow_up_up.png"
+	},
+	{
+		"key" : "arrow_down",
+		"url" : "assets/images/ispy/arrow_up_down.png"
+	},
+	{
+		"key" : "close",
+		"url" : "assets/images/global/close.png"
+	},
+	{
+		"key" : "help",
+		"url" : "assets/images/global/help.png"
+	},
+	{
+		"key" : "download",
+		"url" : "assets/images/global/button_download_up.png"
+	},
+	{
+		"key" : "download_down",
+		"url" : "assets/images/global/button_download_down.png"
+	},
+	{
+		"key" : "ActivityTitle",
+		"url" : "assets/images/global/ActivityTitle.png"
+	},
+	{
+		"key" : "star",
+		"url" : "assets/images/global/star.png"
+	},
+	{
+		"key" : "completionbadge",
+		"url" : "assets/images/global/youdidit_badge.png"
+	}
+]
