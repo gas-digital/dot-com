@@ -13,6 +13,7 @@ $post_params = array('post_type'=>'post',
 
 $wpb_all_query = new WP_Query($post_params);
 
+$i = 0
 ?>
 <?php get_header(); ?>
 
@@ -30,7 +31,7 @@ $wpb_all_query = new WP_Query($post_params);
 
 		<!-- the loop -->
 		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-				<a href="<?php the_permalink(); ?>" class="card">
+				<a href="<?php the_permalink(); ?>" class="card <?php if(!$i) echo "card--mega"; $i++ ?>">
 					<div class="card--featured"><?= the_post_thumbnail( 'medium' ); ?></div>
 					<div class="card--content">
 						<p class="label"><?= the_date(); ?></p>
