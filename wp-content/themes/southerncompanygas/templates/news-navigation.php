@@ -5,7 +5,7 @@ $categories = get_categories();
 
 ?>
 
-<div class="card card--flat card--large news-navigation">
+<div class="card card--flat news-navigation">
   <div class="card--content">
 
     <a href="/news" class="button button--pill <?php if(!has_category()) { echo "active"; }  ?>">All</a>
