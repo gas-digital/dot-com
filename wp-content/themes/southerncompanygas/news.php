@@ -19,7 +19,7 @@ $i = 0
 
 <div class="pattern intro ">
   <div class="copy">
-    <p class="hed hed--large">News</p>
+    <p class="hed hed--large">Newz</p>
   </div>
 </div>
 
