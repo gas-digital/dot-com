@@ -100,6 +100,7 @@ wp-content/mu-plugins/wpe-wp-sign-on-plugin*
 *.ra
 *.3gpp
 *.3gp
+*.mp4
 *.mpeg
 *.mpg
 *.mov
