@@ -62,12 +62,12 @@
   </div>
 
   <div class="pattern">
-    <div class="card card--max">
-      <img src="img/fueling-equity-hero.jpg" />
-    </div>
+    <video poster="img/fe-animated-logo-poster.png" webkit-playsinline playsinline autoplay muted loop>
+       <source src="img/fe-animated-logo.mp4" type="video/mp4" />
+    </video>
   </div>
 
-  <div class="pattern split split--small split--left-weighted">
+  <div class="pattern split">
     <div class="left">
       <div class="copy copy--left">
         <h2 class="hed hed--large">Fueling Equity focuses on meaningful change in the following areas:</h2>
@@ -82,7 +82,7 @@
       </div>
     </div>
     <div class="right">
-      <img width="300px" src="/fuelingequity/img/fueling-equity-logo-sm.png" />
+      <img class="image" src="img/fueling-equity-hero.jpg" />
     </div>
   </div>
 
@@ -103,7 +103,7 @@
       </div>
     </div>
     <div class="right">
-      <img class="image" src="http://www.fueluponthis.com/fuelingequity/img/kim-greene.png" alt="Kim Greene" />
+      <img class="image" src="/fuelingequity/img/kim-greene.png" alt="Kim Greene" />
     </div>
   </div>
 
@@ -162,7 +162,7 @@
   <div class="card-group pattern">
     <div class="card card--large">
       <div class="card--featured">
-        <img class="image" src="http://www.fueluponthis.com/fuelingequity/img/childhood.jpg" alt="Wonya Lucas as a child with her uncle, Hank Aaron."/>
+        <img class="image" src="/fuelingequity/img/childhood.jpg" alt="Wonya Lucas as a child with her uncle, Hank Aaron."/>
       </div>
       <div class="card--content">
         <p>Wonya Lucas as a child with her uncle, Hank Aaron.</p>
@@ -172,8 +172,8 @@
 
   <div class="pattern">
     <div class="content">
-      <p class="hed hed--large">Lucas Role as leader and advice to Southern Company Gas employees</p>
-      <p>Lucas’ then discussed her new role and her ongoing efforts to promote diversity at the Hallmark Channel, where previous content had not featured significant racial and sexual diversity.</p>
+      <p class="hed hed--large">Lucas' role as leader and advice to Southern Company Gas employees</p>
+      <p>Lucas then discussed her new role and her ongoing efforts to promote diversity at the Hallmark Channel, where previous content had not featured significant racial and sexual diversity.</p>
 
       <p>“I approached it as a brand person. I looked at the Hallmark Cards brand,” Lucas said. “You see a section for the LGBTQ community, you see Mahogany, a 30-year-old brand targeted at African-American women. You see Tree of Life for the Jewish community and DaySpring for the Christian community, you see Vida for the Hispanic and Latinx communities. Hallmark has been diverse and representative for many years. My job as a brand builder is to capture the breadth and depth of that brand.”</p>
 
@@ -232,6 +232,11 @@
 </div>
 
 <style type="text/css">
+  video {
+    object-fit: cover;
+    width: 100%;
+  }
+
   .copy .hed--large::after {
     background: black;
   }
