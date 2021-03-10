@@ -30,9 +30,16 @@ $i = 0
     <?php get_template_part( 'templates/news-navigation' ); ?>
 
 		<!-- the loop -->
-		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+		<?php
+			while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
+				$image = the_post_thumbnail( 'medium' );
+
+				if(substr("BG_Darkblue.png")){
+					$image = "https://socogasstag.wpengine.com/wp-content/uploads/2021/02/hyblend-image-scaled.jpg"
+				}
+		?>
 				<a href="<?php the_permalink(); ?>" class="card <?php if(!$i) echo "card--mega"; $i++ ?>">
-					<div class="card--featured"><?= the_post_thumbnail( 'medium' ); ?></div>
+					<div class="card--featured"><?= $image ?></div>
 					<div class="card--content">
 						<p class="label"><?= the_date(); ?></p>
 						<p class="hed"><?php the_title(); ?></p>
