@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $post_params = array('post_type'=>'post',
 										 'post_status'=>'publish',
-										 'posts_per_page'=>4);
+										 'posts_per_page'=>2);
 
 $wpb_all_query = new WP_Query($post_params);
 
