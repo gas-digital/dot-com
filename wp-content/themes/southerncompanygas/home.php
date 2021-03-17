@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $post_params = array('post_type'=>'post',
 										 'post_status'=>'publish',
-										 'posts_per_page'=>2);
+										 'posts_per_page'=>1);
 
 $wpb_all_query = new WP_Query($post_params);
 
@@ -23,7 +23,7 @@ $i = 0;
 
 		<!-- the loop -->
 		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-				<a href="<?php the_permalink(); ?>" class="card <?php if($i%2 ) echo "card--large" ?>">
+				<a href="<?php the_permalink(); ?>" class="card <?php if($i == 0) echo "card--mega" ?>">
 					<div class="card--featured"><?= the_post_thumbnail( 'medium' ); ?></div>
 					<div class="card--content">
 						<p class="label"><?= the_date(); ?></p>
