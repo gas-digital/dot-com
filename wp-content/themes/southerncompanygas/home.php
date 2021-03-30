@@ -17,75 +17,55 @@ $i = 0;
 ?>
 <?php get_header(); ?>
 
-<div class="pattern split" style="background-color: black; margin: 0 auto;">
-  <div class="left">
-    <div class="card card--large">
-      <div class="card--featured">
-        <iframe width="100%" height="400" src="https://www.youtube.com/embed/XoB8NlCldTQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="card--content">
-        <p class="label">On January 30, 2019</p>
-        <p class="hed">Polar vortex sends temperatures to -51F </p>
-        <p>Nicor Gas delivered on its promise of providing safe, reliable gas to its customers.</p>
-      </div>
-    </div>
-  </div>
-  <div class="right">
-    <div class="copy copy--left dark">
-      <p class="hed hed--large">Employees prepare to brave the chill to keep customers safe, warm</p>
-      <p> As a potent blast of cold air continues to descend from the Arctic into much of the country, our teams at Nicor Gas, Virginia Natural Gas, Atlanta Gas Light and Chattanooga Gas continue to work around-the-clock to keep customers safe and warm.</p>
-    </div>
-  </div>
-</div>
-
-<div class="pattern card-group">
-	<a href="" class="card card--image card--mega" style="background-image:url(https://southerncompanygas.com/wp-content/uploads/2019/09/socogas-history.jpg);">
-		<div class="card--content">
-			<p class="hed">150 years of service</p>
-			<p>Uncover our legacy </p>
-		</div>
-	</a>
-	<a href="/about-us/leadership" class="card card--large">
-		<div class="card--featured">
-			<img src="https://southerncompanygas.com/wp-content/uploads/2019/12/kimberly-s-green-leadership.jpg" />
-		</div>
-		<div class="card--content">
-			<p class="hed">Leading us into tomorrow</p>
-			<p>Learn about our leaders </p>
-		</div>
-	</a>
-</div>
+<!-- the loop -->
 
 <?php if ( $wpb_all_query->have_posts() ) : ?>
 
-  <div class="pattern card-group">
+<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+		<div class="pattern split intro" style="background-color: black; margin: 0 auto;">
+		  <div class="left">
+		    <?= the_post_thumbnail( 'medium' ); ?>
+		  </div>
+		  <div class="right">
+		    <div class="copy copy--left dark">
+					<p class="label"><?= the_date(); ?></p>
+		      <p class="hed hed--large"><?php the_title(); ?></p>
+		      <a href="<?php the_permalink(); ?>">Learn more &#8594;</a>
+		    </div>
+		  </div>
+		</div>
+<?php
+		$i = $i + 1;
+		endwhile;
+?>
+<!-- end of the loop -->
 
+	<div class="pattern split">
+	<div class="left">
+		<div class="copy copy--left">
+			<p class="label">Kim Greene, CEO</p>
+			<p class="hed hed--large">Leading us into tomorrow</p>
+			<p>Southern Company Gas’s roots date back to 1856 when Atlanta Gas Light was incorporated to provide gas lighting to the city of Atlanta.</p>
+			<a href="/about-us">Learn more &#8594;</a>
+		</div>
+	</div>
+	<div class="right">
+		<img src="/about-us/leadership/img/kim-greene-06.jpg" />
+	</div>
+	</div>
 
-		<!-- the loop -->
-		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-				<a href="<?php the_permalink(); ?>" class="card <?php if($i == 0) echo "card--mega" ?>">
-					<div class="card--featured"><?= the_post_thumbnail( 'medium' ); ?></div>
-					<div class="card--content">
-						<p class="label"><?= the_date(); ?></p>
-						<p class="hed"><?php the_title(); ?></p>
-					</div>
-				</a>
-		<?php
-		 		$i = $i + 1;
-				endwhile;
-	  ?>
-		<!-- end of the loop -->
+  <div class="pattern split">
+		<div class="left">
+			<img src="/environment/img/clean-horz@3x.png" />
+		</div>
 
-		<a href="/environment" class="card card--medium">
-			<div class="card--featured">
-				<img src="/environment/img/clean-horz@3x.png" />
-			</div>
-			<div class="card--content">
+		<div class="right">
+			<div class="copy copy--left">
 				<p class="label">Environment</p>
-				<p class="hed">Everyone deserves energy that is not only clean, but also safe, reliable and affordable. </p>
+				<p class="hed hed--large">Everyone deserves energy that is not only clean, but also safe, reliable and affordable. </p>
+				<p href="/about-us/leadership">Learn more &#8594;</p>
 			</div>
-		</a>
-
+		</div>
 	</div>
 
   <div class="pattern content">
@@ -93,8 +73,6 @@ $i = 0;
 
     <p>We hold ourselves accountable to our customers first and foremost. To that end, we’re committed to delivering clean, safe, reliable and affordable energy for our customers, our neighbors and our communities.</p>
   </div>
-
-
 
 	<div href="/community" class="image-break pattern dark" style="background-image:url('https://southerncompanygas.com/wp-content/uploads/2019/10/scgco-what-is-natural-gas.jpg');">
     <div class="dimmer"></div>
@@ -228,5 +206,19 @@ $i = 0;
 		margin: 0.2rem 0.6rem;
 	}
 
+	#main {
+		padding: 0 !important;
+	}
 
+	#main .fusion-row{
+		max-width: unset;
+	}
+
+	.pattern.split.intro {
+		max-width: unset;
+	}
+
+	.image-break {
+		max-width: 120rem;
+	}
 </style>
