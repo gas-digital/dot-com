@@ -22,9 +22,9 @@ $i = 0;
 <?php if ( $wpb_all_query->have_posts() ) : ?>
 
 <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-		<div class="pattern split intro" style="background-color: black; margin: 0 auto;">
+		<div class="pattern split split--right-weighted intro">
 		  <div class="left">
-		    <?= the_post_thumbnail( 'medium' ); ?>
+				<?= the_post_thumbnail( 'medium' ,  "image"); ?>
 		  </div>
 		  <div class="right">
 		    <div class="copy copy--left dark">
@@ -40,18 +40,20 @@ $i = 0;
 ?>
 <!-- end of the loop -->
 
+<div class="container">
+
 	<div class="pattern split">
-	<div class="left">
-		<div class="copy copy--left">
-			<p class="label">Kim Greene, CEO</p>
-			<p class="hed hed--large">Leading us into tomorrow</p>
-			<p>Southern Company Gas’s roots date back to 1856 when Atlanta Gas Light was incorporated to provide gas lighting to the city of Atlanta.</p>
-			<a href="/about-us">Learn more &#8594;</a>
+		<div class="left">
+			<div class="copy copy--left">
+				<p class="label">Kim Greene, CEO</p>
+				<p class="hed hed--large">Who we are</p>
+				<p>Southern Company Gas’s roots date back to 1856 when Atlanta Gas Light was incorporated to provide gas lighting to the city of Atlanta.</p>
+				<a href="/who-we-are">Learn more &#8594;</a>
+			</div>
 		</div>
-	</div>
-	<div class="right">
-		<img src="/about-us/leadership/img/kim-greene-06.jpg" />
-	</div>
+		<div class="right">
+			<img src="/who-we-are/leadership/img/kim-greene-06.jpg" />
+		</div>
 	</div>
 
   <div class="pattern split">
@@ -63,7 +65,7 @@ $i = 0;
 			<div class="copy copy--left">
 				<p class="label">Environment</p>
 				<p class="hed hed--large">Everyone deserves energy that is not only clean, but also safe, reliable and affordable. </p>
-				<p href="/about-us/leadership">Learn more &#8594;</p>
+				<a href="/environment">Learn more &#8594;</a>
 			</div>
 		</div>
 	</div>
@@ -157,6 +159,8 @@ $i = 0;
 		</div>
 	</div>
 
+</div>
+
 <?php wp_reset_postdata(); ?>
 
 <?php else : ?>
@@ -206,19 +210,34 @@ $i = 0;
 		margin: 0.2rem 0.6rem;
 	}
 
-	#main {
-		padding: 0 !important;
-	}
-
-	#main .fusion-row{
-		max-width: unset;
-	}
-
-	.pattern.split.intro {
-		max-width: unset;
-	}
-
 	.image-break {
 		max-width: 120rem;
+	}
+
+	.pattern.intro {
+		margin: 0;
+		padding: 0 6rem;
+		width: 100%;
+		max-width: unset;
+		background-color: #B2D235;
+		border-bottom-left-radius: 3rem;
+		border-bottom-right-radius: 3rem;
+		background-image: url('/assets/img/technology-faded.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.intro .copy a {
+		color: white;
+	}
+
+	.container {
+		padding-top: 0;
+	}
+
+	@media (max-width: 900px) {
+		.pattern.intro {
+			padding: 3rem;
+		}
 	}
 </style>

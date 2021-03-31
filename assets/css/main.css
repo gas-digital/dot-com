@@ -6,7 +6,7 @@
 
 .navbar ol li.search { position: relative; top: 0.3rem; right: 0.9rem; }
 
-.ham { position: fixed; z-index: 10; top: 5rem; right: 3rem; width: 3rem; height: 3rem; border: 3px solid #626262; border-radius: 0.3rem; background: none; color: #FFFFFF; font-weight: bold; font-size: 3rem; cursor: pointer; background-size: 100%; justify-content: center; align-items: center; display: flex; display: none; flex-direction: column; }
+.ham { position: fixed; z-index: 10; top: 5rem; right: 3rem; width: 3rem; height: 3rem; border: 3px solid #626262; border-radius: 0.3rem; background: none; color: #FFFFFF; font-weight: bold; font-size: 3rem; cursor: pointer; background-size: 100%; justify-content: center; align-items: center; display: none; flex-direction: column; }
 
 .ham div { width: 30%; height: .3rem; background: #626262; margin: 0.1rem; position: relative; }
 
@@ -18,7 +18,7 @@
 
 .ham.showClose .btm { transform: rotateZ(-45deg); }
 
-@media (max-width: 1200px) { .ham { display: flex; } .navbar { top: 0; right: 0; z-index: 2; width: 100vw; height: 100vh; display: flex; overflow: hidden; position: fixed; padding: 3rem; transform: translateX(100%); box-sizing: border-box; background: rgba(255, 255, 255, 0.9); justify-content: center; transition: transform 0.3s ease; align-items: center; } .navbar ol { flex-direction: column; align-items: center; } .navbar ol li a { padding: 1rem; display: flex; font-size: 2.4rem; } .showNav { transform: translateX(0); } }
+@media (max-width: 900px) { .ham { display: flex; } .navbar { top: 0; right: 0; z-index: 2; width: 100vw; height: 100vh; display: flex; overflow: hidden; position: fixed; padding: 3rem; transform: translateX(100%); box-sizing: border-box; background: rgba(255, 255, 255, 0.9); justify-content: center; transition: transform 0.3s ease; align-items: center; } .navbar ol { flex-direction: column; align-items: center; } .navbar ol li a { padding: 1rem; display: flex; font-size: 2.4rem; } .showNav { transform: translateX(0); } }
 
 a { color: #00BCF1; }
 
@@ -36,7 +36,7 @@ ul { font-size: 1.4rem; line-height: 2.8rem; list-style: none; }
 
 #header { display: flex; justify-content: center; background: #EBEBEB; min-height: 15.2rem; width: 100%; }
 
-#header-container { display: flex; width: 100%; height: 3.2rem; max-width: 144rem; padding: 5rem 3rem 6rem 6rem; justify-content: space-between; }
+#header-container { display: flex; width: 100%; max-width: 144rem; align-items: center; padding: 5rem 3rem 6rem 6rem; justify-content: space-between; }
 
 #logo { height: 3.2rem; }
 

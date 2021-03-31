@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	echo apply_filters( 'avada_space_head', Avada()->settings->get( 'space_head' ) ); // phpcs:ignore WordPress.Security.EscapeOutput
 	?>
 
-	<link rel="stylesheet" href="https://www.fueluponthis.com/assets/css/main.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/css/main.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://ghost.ship.computer/assets/css/main.css" crossorigin="anonymous">
 
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -46,6 +46,26 @@ $wrapper_class  = 'fusion-wrapper';
 $wrapper_class .= ( is_page_template( 'blank.php' ) ) ? ' wrapper_blank' : '';
 ?>
 <body <?php body_class(); ?>>
+	<header id="header">
+  <div id="header-container">
+    <a id="logo" href="/"><img src="/assets/img/soco-gas-horiztonal-@2x.png" /></a>
+
+    <div class="ham">
+      <div class="top"></div>
+      <div class="btm"></div>
+    </div>
+    <nav class="header-links navbar">
+      <ol>
+        <li><a href="/who-we-are/">Who We Are</a></li>
+        <li><a href="/safety/">Safety</a></li>
+        <li><a href="/environment/">Environment</a></li>
+        <li><a href="/community/">Community</a></li>
+        <li><a href="/news/">News</a></li>
+      </ol>
+    </nav>
+  </div>
+</header>
+
 	<?php do_action( 'avada_before_body_content' ); ?>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'Avada' ); ?></a>
 
@@ -53,18 +73,6 @@ $wrapper_class .= ( is_page_template( 'blank.php' ) ) ? ' wrapper_blank' : '';
 		<div class="fusion-sides-frame"></div>
 		<div id="wrapper" class="<?php echo esc_attr( $wrapper_class ); ?>">
 			<div id="home" style="position:relative;top:-1px;"></div>
-			<?php avada_header_template( 'below', ( is_archive() || Avada_Helper::bbp_is_topic_tag() ) && ! ( class_exists( 'WooCommerce' ) && is_shop() ) ); ?>
-			<?php if ( 'left' === fusion_get_option( 'header_position' ) || 'right' === fusion_get_option( 'header_position' ) ) : ?>
-				<?php avada_side_header(); ?>
-			<?php endif; ?>
-
-			<?php avada_sliders_container(); ?>
-
-			<?php avada_header_template( 'above', ( is_archive() || Avada_Helper::bbp_is_topic_tag() ) && ! ( class_exists( 'WooCommerce' ) && is_shop() ) ); ?>
-
-			<div class="avada-page-titlebar-wrapper">
-				<?php avada_current_page_title_bar( $c_page_id ); ?>
-			</div>
 
 			<?php
 			$row_css    = '';
