@@ -236,7 +236,7 @@ $i = 0;
 		display: flex;
 		flex-direction: column;
 		max-width: unset;
-		background-color: #B2D235;
+		background-color: #003010;
 		background-image: url('/assets/img/technology-faded.png');
 		background-size: cover;
 		background-position: center;
