@@ -178,6 +178,14 @@ $i = 0;
 <?php get_footer(); ?>
 
 <style>
+	#main {
+		padding:0 !important;
+	}
+
+	#main .fusion-row{
+		max-width: unset;
+	}
+
 	.pattern.card-group {
 		margin-top: 10rem;
 	}
@@ -229,8 +237,6 @@ $i = 0;
 		flex-direction: column;
 		max-width: unset;
 		background-color: #B2D235;
-		/* border-bottom-left-radius: 3rem;
-		border-bottom-right-radius: 3rem; */
 		background-image: url('/assets/img/technology-faded.png');
 		background-size: cover;
 		background-position: center;
@@ -266,6 +272,10 @@ $i = 0;
 	@media (max-width: 900px) {
 		.pattern.intro {
 			padding: 3rem;
+		}
+
+		.pattern.news {
+			background: none;
 		}
 	}
 </style>
