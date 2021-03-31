@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $post_params = array('post_type'=>'post',
 										 'post_status'=>'publish',
-										 'posts_per_page'=>1);
+										 'posts_per_page'=>3);
 
 $wpb_all_query = new WP_Query($post_params);
 
@@ -17,28 +17,36 @@ $i = 0;
 ?>
 <?php get_header(); ?>
 
-<!-- the loop -->
-
-<?php if ( $wpb_all_query->have_posts() ) : ?>
-
-<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-		<div class="pattern split split--right-weighted intro">
-		  <div class="left">
-				<?= the_post_thumbnail( 'medium' ,  "image"); ?>
-		  </div>
-		  <div class="right">
-		    <div class="copy copy--left dark">
-					<p class="label"><?= the_date(); ?></p>
-		      <p class="hed hed--large"><?php the_title(); ?></p>
-		      <a href="<?php the_permalink(); ?>">Learn more &#8594;</a>
-		    </div>
-		  </div>
+<div class="pattern intro">
+	<div class="split split--right-weighted">
+		<div class="left">
+			<img src="/wp-content/uploads/2021/02/hyblend-image-scaled.jpg" />
 		</div>
-<?php
-		$i = $i + 1;
-		endwhile;
-?>
-<!-- end of the loop -->
+		<div class="right">
+			<div class="copy copy--left dark">
+				<p class="label">Environment / Featured / Industry News</p>
+				<p class="hed hed--large">Breaking barriers: How we’re working to overcome obstacles</p>
+				<p>American innovation moves at lightning speed. Access to alternative forms of energy is increasing, but incorporating new fuels into our energy system is not without challenges.</p>
+				<a href="/2021/02/11/hyblend/">Learn more &#8594;</a>
+			</div>
+		</div>
+	</div>
+	<div class="news pattern card-group">
+		<?php if ( $wpb_all_query->have_posts() ) : ?>
+		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+				<a href="<?php the_permalink(); ?>" class="card dark card--flat card--micro">
+					<div class="card--featured">
+						<?= the_post_thumbnail( "small" ,  "image") ?>
+					</div>
+					<div class="card--content">
+							<p class="hed hed--large"><?php the_title(); ?></p>
+					</div>
+				</a>
+		<?php
+				endwhile;
+		?>
+	</div>
+</div>
 
 <div class="container">
 
@@ -216,15 +224,27 @@ $i = 0;
 
 	.pattern.intro {
 		margin: 0;
-		padding: 0 6rem;
 		width: 100%;
+		display: flex;
+		flex-direction: column;
 		max-width: unset;
 		background-color: #B2D235;
-		border-bottom-left-radius: 3rem;
-		border-bottom-right-radius: 3rem;
+		/* border-bottom-left-radius: 3rem;
+		border-bottom-right-radius: 3rem; */
 		background-image: url('/assets/img/technology-faded.png');
 		background-size: cover;
 		background-position: center;
+		overflow: hidden;
+	}
+
+	.pattern.intro .split {
+		margin: 3rem auto;
+	}
+
+	.pattern.news {
+		background-color: rgba(0,0,0,0.4);
+		padding: 3rem;
+		margin: 0;
 	}
 
 	.intro .copy a {
@@ -233,6 +253,14 @@ $i = 0;
 
 	.container {
 		padding-top: 0;
+	}
+
+	.card.card--micro.card--flat .card--featured {
+		border-radius: 3rem;
+	}
+
+	.card.card--micro.card--flat .card--content {
+		background: none;
 	}
 
 	@media (max-width: 900px) {
