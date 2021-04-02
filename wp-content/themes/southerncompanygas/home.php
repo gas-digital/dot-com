@@ -178,6 +178,7 @@ $i = 0;
 <?php get_footer(); ?>
 
 <style>
+
 	#main {
 		padding:0 !important;
 	}
@@ -236,10 +237,10 @@ $i = 0;
 		display: flex;
 		flex-direction: column;
 		max-width: unset;
-		background-color: #003010;
-		background-image: url('/assets/img/technology-faded.png');
+		background-color: #003A5D;
+		background-image: url('/environment/img/environment-sustainable-lines.svg');
 		background-size: cover;
-		background-position: center;
+		background-position: 0% 37%;
 		overflow: hidden;
 	}
 
