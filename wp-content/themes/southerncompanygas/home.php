@@ -33,10 +33,12 @@ $i = 0;
 	</div>
 	<div class="news pattern card-group">
 		<?php if ( $wpb_all_query->have_posts() ) : ?>
-		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
+				$thumb = get_the_post_thumbnail_url( get_the_ID() ,  "small");
+		?>
 				<a href="<?php the_permalink(); ?>" class="card dark card--flat card--micro">
-					<div class="card--featured">
-						<?= the_post_thumbnail( "small" ,  "image") ?>
+					<div class="card--featured" style="background-image:url('<?= $thumb ?>')">
+
 					</div>
 					<div class="card--content">
 							<p class="hed hed--large"><?php the_title(); ?></p>
@@ -60,7 +62,7 @@ $i = 0;
 			</div>
 		</div>
 		<div class="right">
-			<img src="/who-we-are/leadership/img/kim-greene-06.jpg" />
+			<img src="/who-we-are/leadership/img/kim-greene-01.jpg" />
 		</div>
 	</div>
 
