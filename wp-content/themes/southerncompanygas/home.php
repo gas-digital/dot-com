@@ -254,6 +254,7 @@ $i = 0;
 		background-color: rgba(0,0,0,0.4);
 		padding: 3rem;
 		margin: 0;
+		justify-content: center;
 	}
 
 	.intro .copy a {
