@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<p>Our four natural gas utilities that deliver clean, safe, reliable and affordable natural gas to approximately 4.2 million customers.</p>
 					</div>
 				</a>
-				<a class="card" href="/responsibility/charitable-giving/">
+				<a class="card" href="/responsibility/">
 					<div class="card--featured">
 						<img src="/assets/img/assistance.png" />
 					</div>
