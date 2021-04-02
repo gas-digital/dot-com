@@ -35,7 +35,7 @@
     <nav class="navbar">
       <ol>
         <li><a href="/market-strategy"> Introduction </a> </li>
-        <li><a href="/market-strategy/gas-generator">Gas Generator </a></li>
+        <li><a href="/market-strategy/initiatives">Initiatives </a></li>
         <li><a href="/market-strategy/data"> Demographic Data </a> </li>
         <li><a href="/market-strategy/case-studies"> Case Studies </a> </li>
       </ol>
@@ -67,7 +67,7 @@
 
   <div class="card-group pattern">
 
-    <div class="card card--large">
+    <div class="card">
       <div class="card--featured padded">
         <h3 class="hed">The market is challenging</h3>
       </div>
@@ -80,7 +80,7 @@
       </div>
     </div>
 
-    <div class="card card--large">
+    <div class="card">
       <div class="card--featured padded">
         <h3 class="hed">The financial landscape is active</h3>
       </div>
@@ -95,7 +95,7 @@
       </div>
     </div>
 
-    <div class="card card--large">
+    <div class="card">
       <div class="card--featured padded">
         <h3 class="hed">External pressures are increasing</h3>
       </div>
@@ -122,70 +122,19 @@
     </div>
   </div>
 
-  <div class="pattern copy copy--center">
-    <h2 class="hed hed--large">Top Initiatives</h2>
-  </div>
-
-  <div class="card-group pattern">
-    <a href="gas-generator" class="card card--mega">
-      <div class="card--featured">
-        <img class="image" src="img/generac.jpg" alt="" />
-      </div>
-      <div class="card--content">
-        <h3 class="hed">Gas Generator Product Launch</h3>
+  <div class="pattern split">
+    <div class="left">
+      <div class="copy copy--left">
+        <h3 class="hed hed--large">Top Initiatives</h3>
         <p>Business growth is all about adding to our portfolio of products and services. With that in mind, we identified a customer need are satisfying that need with a Generac backup generator product launch.</p>
-      </div>
-    </a>
-  </div>
-
-  <div class="patttern split">
-    <div class="left">
-      <div class="copy copy--left">
-        <h2 class="hed hed--medium">Builder and Developer Website Pages</h2>
-        <p>Builders and developers are an audience we can continue to reach to promote the many uses of natural gas. To make doing business with us as easy as possible and to further educate this audience on our offerings.</p>
+        <a href="initiatives">Learn more &#8594;</a>
       </div>
     </div>
     <div class="right">
-      <div class="card card--large">
-        <div class="card--featured padded">
-          <p class="label">Content for Builders and Developers</p>
-          <p class="hed">Updates to Nicor Website:</p>
-        </div>
-        <div class="card--content" style="background-color:black;">
-          <ul>
-            <li>Include more information about the benefits of natural gas and natural gas appliances</li>
-            <li>Emphasize the value Nicor Gas provides</li>
-            <li>Streamline the natural gas installation process</li>
-            <li>Provide a better online experience.</li>
-          </ul>
-        </div>
-      </div>
+      <img class="image" src="img/header.png" />
     </div>
-  </div>
 
-  <div class="pattern split split--left-weighted">
-    <div class="left">
-    <img class="image" src="/assets/img/assistance.png"/>
-    </div>
-    <div class="right">
-      <div class="copy copy--left">
-        <h2 class="hed hed--medium">Prospect Recruitment</h2>
-        <p>Market Strategy is working with the Customer Development and GIS teams to identify households that are on or close to our existing mains and develop a strategy to target and convert those prospects to Nicor Gas customers.</p>
-      </div>
-    </div>
   </div>
-
-  <div class="pattern split split--right-weighted">
-      <div class="right">
-        <div class="copy copy--left">
-          <h2 class="hed hed--medium">Marketing and Analytics Support</h2>
-            <p>Market Strategy provides analytics services to departments across the organization, such as Regulatory, Sales, Credit, and Collections, to help maximize revenue generation, cost reductions, and project efficiencies.</p>
-        </div>
-      </div>
-      <div class="right">
-        <img class="image" src="/assets/img/technology.png" />
-      </div>
-    </div>
 
   <div class="pattern split split--left-weighted">
     <div class="left">
@@ -249,7 +198,73 @@
   </div>
 </div>
 
-<style>
+
+    <script type="text/javascript">
+  var container = document.querySelector(".container")
+  var navbar = document.querySelector(".navbar")
+  var ham = document.querySelector(".ham")
+
+  function navigate(e){
+    e.preventDefault()
+    const section = e.target.dataset.id;
+    var element = document.getElementById(section);
+    toggleHamburger()
+
+    var offset = document.getElementById(section).offsetTop
+    var headerOffest = document.getElementById("intro").offsetTop
+    window.scrollTo(0, offset - headerOffest)
+  }
+
+  function toggleHamburger(e){
+    navbar.classList.toggle("showNav")
+    ham.classList.toggle("showClose")
+    container.classList.toggle("fixed-position")
+  }
+
+  ham.addEventListener("click", toggleHamburger)
+
+  var menuLinks = document.querySelectorAll(".menuLink")
+  for (var i=0; i < menuLinks.length; i++){
+    menuLinks[i].addEventListener("click", navigate)
+  }
+</script>
+
+
+    <style type="text/css">
+      .card ul {
+        margin: 0;
+        color: white;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        list-style: disc;
+      }
+
+      .card--featured.padded {
+        padding: 2rem 2rem 2rem 3rem;
+      }
+
+      .card ul li {
+        margin: 1rem 0;
+      }
+
+      .split.comparison .left {
+        background-color: black;
+      }
+
+      .split.comparison .right {
+        background-color: grey;
+      }
+
+      @media (max-width: 800px) {
+        .card ul {
+          padding: 2rem;
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+
+
+    <style>
   .ham {
     display: flex;
   }
@@ -288,71 +303,6 @@
   }
 </style>
 
-
-
-    <script type="text/javascript">
-  var container = document.querySelector(".container")
-  var navbar = document.querySelector(".navbar")
-  var ham = document.querySelector(".ham")
-
-  function navigate(e){
-    e.preventDefault()
-    const section = e.target.dataset.id;
-    var element = document.getElementById(section);
-    toggleHamburger()
-
-    var offset = document.getElementById(section).offsetTop
-    var headerOffest = document.getElementById("intro").offsetTop
-    window.scrollTo(0, offset - headerOffest)
-  }
-
-  function toggleHamburger(e){
-    navbar.classList.toggle("showNav")
-    ham.classList.toggle("showClose")
-    container.classList.toggle("fixed-position")
-  }
-
-  ham.addEventListener("click", toggleHamburger)
-
-  var menuLinks = document.querySelectorAll(".menuLink")
-  for (var i=0; i < menuLinks.length; i++){
-    menuLinks[i].addEventListener("click", navigate)
-  }
-</script>
-
-
-    <style type="text/css">
-      .card ul {
-        margin: 0;
-        color: white;
-        font-size: 2.1rem;
-        line-height: 4rem;
-        list-style: disc;
-      }
-
-      .card--featured.padded {
-        padding: 3rem 3rem 3rem 5rem;
-      }
-
-      .card ul li {
-        margin: 1rem 0;
-      }
-
-      .split.comparison .left {
-        background-color: black;
-      }
-
-      .split.comparison .right {
-        background-color: grey;
-      }
-
-      @media (max-width: 800px) {
-        .card ul {
-          padding: 2rem;
-          font-size: 1.8rem;
-        }
-      }
-    </style>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9XFSH9"

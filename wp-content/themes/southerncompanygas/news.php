@@ -69,4 +69,11 @@ $i = 0
 	.pattern.card-group {
 		margin-top: 10rem;
 	}
+
+	#main {
+		background-image: url('/environment/img/environment-sustainable-lines.svg');
+		background-size: cover;
+		background-position: 10% -10rem;
+	}
+
 </style>
