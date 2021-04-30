@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex, nofollow">
-    <title>Southern Company Gas | FUELup</title>
+    <title>Southern Company Gas</title>
     <link rel="stylesheet" href="https://ghost.ship.computer/assets/css/main.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -27,21 +27,26 @@
 
   </head>
   <body>
+    <header id="header">
+      <div id="header-container">
+        <a id="logo" href="/"><img src="/assets/img/soco-gas-horiztonal-@2x.png" /></a>
 
-    <div class="ham">
-      <div class="top"></div>
-      <div class="btm"></div>
-    </div>
-    <nav class="navbar">
-      <ol>
-        <li><a href="/market-strategy"> Introduction </a> </li>
-        <li><a href="/market-strategy/initiatives">Initiatives </a></li>
-        <li><a href="/market-strategy/data"> Demographic Data </a> </li>
-        <li><a href="/market-strategy/case-studies"> Case Studies </a> </li>
-      </ol>
-    </nav>
-
-
+        <div class="ham">
+          <div class="top"></div>
+          <div class="btm"></div>
+        </div>
+        <nav class="header-links navbar">
+          <ol>
+            <li><a href="/market-strategy"> Home </a> </li>
+            <li><a href="/market-strategy/about-us"> About Us </a> </li>
+            <li><a href="/market-strategy/strategy-development-and-product-launches">Strategy Development and Product Launches </a></li>
+            <li><a href="/market-strategy/data-and-analytics"> Data and Analytics </a> </li>
+            <li><a href="/market-strategy/case-studies"> Case Studies </a> </li>
+            <li><a href="/market-strategy/contact-us">Contact Us</a> </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
 
     <div class="container">
   <div id="case-studies" class="pattern copy copy--center">
@@ -51,8 +56,7 @@
   <div class="case-study">
     <div class=" copy copy--left">
       <p>(Phase 1 of 3 Q2 2019 – Q4 2020)</p>
-      <h2 class="hed hed--large">Customer Demographics Repository (CDR)</h2>
-      <p>Reliable and targeted customer data is crucial to becoming an effective, data -driven enterprise. However, the company’s data existed in multiple databases and was hosted in silos that were clunky to use, if not entirely incompatible. There wasn’t a standardized format, which made analysis a complex and time-consuming process. Storage of historical data was limited and there wasn’t a place to store incoming customer data from new sales or R&D efforts. Overall, the system was rigid and difficult to scale for growth.</p>
+      <h2 class="hed hed--medium">Customer Demographics Repository (CDR)</h2>
     </div>
     <div class=" split comparison">
       <div class="left">
@@ -77,7 +81,7 @@
   <div class="case-study alt">
     <div class=" copy copy--left">
       <p>Q3 2019 – January 2020</p>
-      <h2 class="hed hed--large">Business Intelligence Pilot Program for VNG Customer Profile</h2>
+      <h2 class="hed hed--medium">Business Intelligence Pilot Program for VNG Customer Profile</h2>
     </div>
     <div class=" split comparison">
       <div class="left">
@@ -102,7 +106,7 @@
   <div class="case-study">
     <div class=" copy copy--left">
       <p>Q2 2020</p>
-      <h2 class="hed hed--large">COVID-19 Care Package Response</h2>
+      <h2 class="hed hed--medium">COVID-19 Care Package Response</h2>
     </div>
     <div class=" split comparison">
       <div class="left">
@@ -127,7 +131,7 @@
   <div class="case-study alt">
     <div class=" copy copy--left">
       <p>Q2 2020</p>
-      <h2 class="hed hed--large">AGL Recruitment Campaign</h2>
+      <h2 class="hed hed--medium">AGL Recruitment Campaign</h2>
     </div>
     <div class=" split comparison">
       <div class="left">
@@ -153,7 +157,7 @@
   <div class="case-study">
     <div class=" copy copy--left">
       <p>December 2020 – ongoing</p>
-      <h2 class="hed hed--large">Illinois Customer Credit Analysis</h2>
+      <h2 class="hed hed--medium">Illinois Customer Credit Analysis</h2>
     </div>
     <div class=" split comparison">
       <div class="left">
@@ -178,7 +182,7 @@
   <div class="case-study alt">
     <div class=" copy copy--left">
       <p>Q2 2020 – Q4 2020</p>
-      <h2 class="hed hed--large">Convenience Fee Research and Analysis</h2>
+      <h2 class="hed hed--medium">Convenience Fee Research and Analysis</h2>
     </div>
     <div class=" split comparison">
       <div class="left">
@@ -270,16 +274,29 @@
 
 
     <style type="text/css">
+      blockquote {
+        color: white;
+        margin: 10rem auto;
+        padding: 3rem;
+        border-radius: 3rem;
+        background-color: #003A5D;
+      }
+
+      ul {
+        font-size: 1.8rem;
+        line-height: 4rem;
+        list-style: disc;
+      }
+
       .card ul {
         margin: 0;
-        color: white;
-        font-size: 1.8rem;
-        line-height: 3rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
         list-style: disc;
       }
 
       .card--featured.padded {
-        padding: 2rem 2rem 2rem 3rem;
+        padding: 2rem 2rem 0 3rem;
       }
 
       .card ul li {
@@ -287,11 +304,11 @@
       }
 
       .split.comparison .left {
-        background-color: black;
+        background-color: #003A5D;
       }
 
       .split.comparison .right {
-        background-color: grey;
+        background-color: #00BCF1;
       }
 
       @media (max-width: 800px) {
@@ -301,46 +318,6 @@
         }
       }
     </style>
-
-
-    <style>
-  .ham {
-    display: flex;
-  }
-
-  .navbar {
-    top: 0;
-    right: 0;
-    z-index: 2;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    overflow: hidden;
-    position: fixed;
-    padding: 3rem;
-    transform: translateX(100%);
-    box-sizing: border-box;
-    background: rgba(255,255,255,0.9);
-    justify-content: center;
-    transition: transform 0.3s ease;
-    align-items: center;
-  }
-
-  .navbar ol {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar ol li a {
-    padding: 1rem;
-    display: flex;
-    font-size: 2.4rem;
-  }
-
-  .showNav {
-    transform: translateX(0);
-  }
-</style>
 
 
     <!-- Google Tag Manager (noscript) -->
