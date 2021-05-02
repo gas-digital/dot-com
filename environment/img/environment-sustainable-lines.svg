@@ -21,7 +21,7 @@
     }
   </style>
 
-  <g id="intro-bg" opacity="0.15" style="stroke-dashoffset: 500;">
+  <g id="intro-bg" opacity="0.1" style="stroke-dashoffset: 500;">
     <rect
       x="0.7"
       y="0.5"

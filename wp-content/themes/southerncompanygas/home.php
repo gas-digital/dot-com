@@ -23,7 +23,7 @@ $i = 0;
 			<img src="/wp-content/uploads/2021/02/hyblend-image-scaled.jpg" />
 		</div>
 		<div class="right">
-			<div class="copy copy--left dark">
+			<div class="copy copy--left">
 				<p class="label">Environment / Featured / Industry News</p>
 				<p class="hed hed--large">Breaking barriers: How we’re working to overcome obstacles</p>
 				<p>American innovation moves at lightning speed. Access to alternative forms of energy is increasing, but incorporating new fuels into our energy system is not without challenges.</p>
@@ -223,10 +223,10 @@ $i = 0;
 		display: flex;
 		flex-direction: column;
 		max-width: unset;
-		background-color: #003A5D;
+		background-color: white;
 		background-image: url('/environment/img/environment-sustainable-lines.svg');
 		background-size: cover;
-		background-position: 0% 37%;
+		background-position: 0% 26%;
 		overflow: hidden;
 	}
 
@@ -235,7 +235,7 @@ $i = 0;
 	}
 
 	.pattern.news {
-		background-color: rgba(0,0,0,0.4);
+		background-color: rgba(0,0,0,0.8);
 		padding: 3rem;
 		margin: 0;
 		justify-content: center;
