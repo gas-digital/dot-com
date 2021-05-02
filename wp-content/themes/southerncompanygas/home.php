@@ -108,10 +108,6 @@ $i = 0;
 		<div class="grid">
 			<div class="grid--item">
 				<img src="/assets/img/triangle.png" />
-				<p>Alabama Power</p>
-			</div>
-			<div class="grid--item">
-				<img src="/assets/img/triangle.png" />
 				<p>Southern Linc</p>
 			</div>
 			<div class="grid--item">
@@ -124,19 +120,11 @@ $i = 0;
 			</div>
 			<div class="grid--item">
 				<img src="/assets/img/triangle.png" />
-				<p>Georgia Power</p>
-			</div>
-			<div class="grid--item">
-				<img src="/assets/img/triangle.png" />
 				<p>Southern Nuclear</p>
 			</div>
 			<div class="grid--item">
 				<img src="/assets/img/triangle.png" />
 				<p>Atlanta Gas Light</p>
-			</div>
-			<div class="grid--item">
-				<img src="/assets/img/triangle.png" />
-				<p>Gulf Power</p>
 			</div>
 			<div class="grid--item">
 				<img src="/assets/img/triangle.png" />
@@ -161,10 +149,6 @@ $i = 0;
 			<div class="grid--item">
 				<img src="/assets/img/triangle.png" />
 				<p>Nicor Gas</p>
-			</div>
-			<div class="grid--item">
-				<img src="/assets/img/triangle.png" />
-				<p>Sequent Energy Management</p>
 			</div>
 		</div>
 	</div>
