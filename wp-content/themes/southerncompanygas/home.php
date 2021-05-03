@@ -206,7 +206,7 @@ $i = 0;
 		background-color: white;
 		background-image: url('/environment/img/environment-sustainable-lines.svg');
 		background-size: cover;
-		background-position: 0% 26%;
+		background-position: 0% 33%;
 		overflow: hidden;
 	}
 
@@ -219,10 +219,6 @@ $i = 0;
 		padding: 3rem;
 		margin: 0;
 		justify-content: center;
-	}
-
-	.intro .copy a {
-		color: white;
 	}
 
 	.container {
@@ -240,10 +236,6 @@ $i = 0;
 	@media (max-width: 900px) {
 		.pattern.intro {
 			padding: 3rem;
-		}
-
-		.pattern.news {
-			background: none;
 		}
 	}
 </style>

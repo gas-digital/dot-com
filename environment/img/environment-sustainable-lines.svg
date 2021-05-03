@@ -8,7 +8,7 @@
     #intro-bg {
       fill: white;
       stroke: white;
-      stroke-width: 1;
+      stroke-width: 0.5;
       stroke-dasharray: 300;
       stroke-dashoffset: 0;
       animation: dash 10s linear infinite;
@@ -21,7 +21,7 @@
     }
   </style>
 
-  <g id="intro-bg" opacity="0.1" style="stroke-dashoffset: 500;">
+  <g id="intro-bg" opacity="0.15" style="stroke-dashoffset: 500;">
     <rect
       x="0.7"
       y="0.5"
