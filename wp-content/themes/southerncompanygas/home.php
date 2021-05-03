@@ -104,30 +104,30 @@ $i = 0;
 		</div>
 
 		<div class="grid">
-			<div class="grid--item">
+			<a href="https://www.southernlinc.com/" class="grid--item">
 				<img src="/assets/img/triangle.png" />
 				<p>Southern Linc</p>
-			</div>
-			<div class="grid--item">
+			</a>
+			<a href="/" class="grid--item">
 				<img src="/assets/img/triangle.png" />
 				<p>Southern Company Gas</p>
-			</div>
-			<div class="grid--item">
+			</a>
+			<a href="https://virginianaturalgas.com/" class="grid--item">
 				<img src="/assets/img/triangle.png" />
 				<p>Virginia Natural Gas</p>
-			</div>
-			<div class="grid--item">
+			</a>
+			<a href="https://www.atlantagaslight.com/" class="grid--item">
 				<img src="/assets/img/triangle.png" />
 				<p>Atlanta Gas Light</p>
-			</div>
-			<div class="grid--item">
+			</a>
+			<a href="http://chattanoogagas.com/" class="grid--item">
 				<img src="/assets/img/triangle.png" />
 				<p>Chattanooga Gas</p>
-			</div>
-			<div class="grid--item">
+			</a>
+			<a href="https://www.nicorgas.com/" class="grid--item">
 				<img src="/assets/img/triangle.png" />
 				<p>Nicor Gas</p>
-			</div>
+			</a>
 		</div>
 	</div>
 
