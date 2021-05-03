@@ -89,7 +89,7 @@ $i = 0;
 	<div href="/community" class="image-break pattern dark" style="background-image:url('https://southerncompanygas.com/wp-content/uploads/2019/10/scgco-what-is-natural-gas.jpg');">
     <div class="dimmer"></div>
     <div class="copy">
-      <p class="hed hed--large">Join the waitlist to for what's coming with Renewable Natural Gas</p>
+      <p class="hed hed--large">Join our waitlist to know what's coming in Renewable Natural Gas</p>
 			<?php get_template_part( 'templates/mailchimp-form' ); ?>
     </div>
   </div>
