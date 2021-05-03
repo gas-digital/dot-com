@@ -120,31 +120,11 @@ $i = 0;
 			</div>
 			<div class="grid--item">
 				<img src="/assets/img/triangle.png" />
-				<p>Southern Nuclear</p>
-			</div>
-			<div class="grid--item">
-				<img src="/assets/img/triangle.png" />
 				<p>Atlanta Gas Light</p>
 			</div>
 			<div class="grid--item">
 				<img src="/assets/img/triangle.png" />
-				<p>Southern Power</p>
-			</div>
-			<div class="grid--item">
-				<img src="/assets/img/triangle.png" />
 				<p>Chattanooga Gas</p>
-			</div>
-			<div class="grid--item">
-				<img src="/assets/img/triangle.png" />
-				<p>PowerSecure</p>
-			</div>
-			<div class="grid--item">
-				<img src="/assets/img/triangle.png" />
-				<p>Mississippi Power</p>
-			</div>
-			<div class="grid--item">
-				<img src="/assets/img/triangle.png" />
-				<p>Southern  Telecom</p>
 			</div>
 			<div class="grid--item">
 				<img src="/assets/img/triangle.png" />
