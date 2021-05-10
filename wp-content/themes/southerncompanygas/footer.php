@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		  <div class="footer-container pattern card-group">
 	      <a class="card" href="/our-business/">
 					<div class="card--featured">
-						<img src="/assets/img/operations.png" />
+						<img src="/assets/img/illos/hard-hat.svg" />
 					</div>
 					<div class="card--content">
 						<div class="hed">Our Business</div>
@@ -29,16 +29,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</a>
 				<a class="card" href="/responsibility/">
 					<div class="card--featured">
-						<img src="/assets/img/assistance.png" />
+						<img src="/assets/img/illos/hand-bulb.png" />
 					</div>
 					<div class="card--content">
 						<div class="hed">Responsibility</div>
 						<p>We have been a catalyst for positive change in our communities for more than 160 years. That’s why we continue to give back with our time, talent and resources.</p>
 					</div>
 				</a>
-				<a class="card" href="http://investor.southerncompany.com">
+				<a class="card dark" href="http://investor.southerncompany.com">
 					<div class="card--featured">
-						<img src="/assets/img/economies-of-scale.png" />
+						<img src="/assets/img/illos/modern-house.svg" />
 					</div>
 					<div class="card--content">
 						<div class="hed">Investors</div>

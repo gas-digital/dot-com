@@ -68,7 +68,7 @@ $i = 0;
 
   <div class="pattern split">
 		<div class="left">
-			<img src="/environment/img/clean-horz@3x.png" />
+			<img src="/assets/img/illos/bus.svg" />
 		</div>
 
 		<div class="right">
