@@ -78,10 +78,6 @@ p.post-categories {
 	margin-bottom: 0rem;
 }
 
-.post-content p {
-	line-height: 1.7;
-}
-
 .fusion-layout-column {
 	max-width: 80rem;
 }

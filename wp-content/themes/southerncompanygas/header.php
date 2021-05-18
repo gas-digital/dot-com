@@ -48,7 +48,13 @@ $wrapper_class .= ( is_page_template( 'blank.php' ) ) ? ' wrapper_blank' : '';
 <body <?php body_class(); ?>>
 	<header id="header">
   <div id="header-container">
-    <a id="logo" href="/"><img src="/assets/img/soco-gas-horiztonal-@2x.png" /></a>
+    <a id="logo" href="/">
+			<?php if (is_page_template( 'home.php' )){ ?>
+				<img src="/assets/img/soco-gas-inverted-horiztonal-@2x.png" />
+			<?php }else { ?>
+				<img src="/assets/img/soco-gas-horiztonal-@2x.png" />
+			<?php } ?>
+		</a>
 
     <div class="ham">
       <div class="top"></div>

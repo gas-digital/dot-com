@@ -1,7 +1,26 @@
 <svg width="1355" height="997" viewBox="0 0 1355 997" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 862V672L162 766.358L0 862Z" fill="#00A2E0" fill-opacity="0.5"/>
-<path d="M264 516V248L492 381.095L264 516Z" fill="#00A2E0" fill-opacity="0.5"/>
-<path d="M162 997V767L357 881.223L162 997Z" fill="#00A2E0" fill-opacity="0.5"/>
-<path d="M345 888V296L850 590L345 888Z" fill="#00A2E0" fill-opacity="0.5"/>
-<path d="M850 592V0L1355 294L850 592Z" fill="#00A2E0" fill-opacity="0.5"/>
+  <style>
+    #intro-bg {
+      fill: white;
+      stroke: rgba(255,255,255,0.2);
+      stroke-width: 3;
+      stroke-dasharray: 300;
+      stroke-dashoffset: 0;
+      animation: dash 5s linear infinite;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset:600;
+      }
+    }
+  </style>
+
+  <g id="intro-bg">
+    <path d="M0 862V672L162 766.358L0 862Z" fill="#00A2E0" fill-opacity="0.5"/>
+    <path d="M264 516V248L492 381.095L264 516Z" fill="#00A2E0" fill-opacity="0.5"/>
+    <path d="M162 997V767L357 881.223L162 997Z" fill="#00A2E0" fill-opacity="0.5"/>
+    <path d="M345 888V296L850 590L345 888Z" fill="#00A2E0" fill-opacity="0.5"/>
+    <path d="M850 592V0L1355 294L850 592Z" fill="#00A2E0" fill-opacity="0.5"/>
+  </g>
 </svg>

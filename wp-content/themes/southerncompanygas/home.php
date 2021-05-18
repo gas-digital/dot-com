@@ -18,45 +18,51 @@ $i = 0;
 <?php get_header(); ?>
 
 <div class="pattern intro">
-	<div class="split split--right-weighted">
-		<div class="left">
-			<img src="/wp-content/uploads/2021/02/hyblend-image-scaled.jpg" />
-		</div>
-		<div class="right">
-			<div class="copy copy--left">
-				<p class="label">Environment / Featured / Industry News</p>
-				<p class="hed hed--large">Breaking barriers: How we’re working to overcome obstacles</p>
-				<p>American innovation moves at lightning speed. Access to alternative forms of energy is increasing, but incorporating new fuels into our energy system is not without challenges.</p>
+	<div class="copy dark">
+		<h1 class="hed hed--large">We are building with clean energy</h1>
+		<p>As companies and people become more environmentally conscious, Southern Company Gas and organizations like us are tasked with building a future fueled by clean energy.</p>
+	</div>
+</div>
+
+<div class="split news">
+	<div class="left">
+		<div class="card card--medium">
+			<div class="card--featured">
+				<img src="/wp-content/uploads/2021/02/hyblend-image-scaled.jpg" />
+			</div>
+			<div class="card--content">
+				<p class="hed">Breaking barriers: How we’re working to overcome obstacles</p>
+				<p>American innovation moves at lightning speed. Access to alternative forms of energy is increasing...</p>
 				<a href="/2021/02/11/hyblend/">Learn more &#8594;</a>
 			</div>
 		</div>
 	</div>
-	<div class="news pattern card-group">
-		<?php if ( $wpb_all_query->have_posts() ) : ?>
-		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
-				$thumb = get_the_post_thumbnail_url( get_the_ID() ,  "small");
-		?>
-				<a href="<?php the_permalink(); ?>" class="card dark card--flat card--micro">
-					<div class="card--featured" style="background-image:url('<?= $thumb ?>')">
+	<div class="right">
+			<?php if ( $wpb_all_query->have_posts() ) : ?>
+			<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
+					$thumb = get_the_post_thumbnail_url( get_the_ID() ,  "small");
+			?>
+					<a href="<?php the_permalink(); ?>" class="card card--flat card--micro">
+						<div class="card--featured" style="background-image:url('<?= $thumb ?>')">
 
-					</div>
-					<div class="card--content">
-							<p class="hed hed--large"><?php the_title(); ?></p>
-					</div>
-				</a>
-		<?php
-				endwhile;
-		?>
+						</div>
+						<div class="card--content">
+							<p class="label">News</p>
+							<p class="hed"><?php the_title(); ?></p>
+						</div>
+					</a>
+			<?php
+					endwhile;
+			?>
 	</div>
 </div>
 
 <div class="container">
-
 	<div class="pattern split">
 		<div class="left">
 			<div class="copy copy--left">
 				<p class="label">Kim Greene, CEO</p>
-				<p class="hed hed--large">Who we are</p>
+				<p class="hed hed--medium">Who we are</p>
 				<p>Southern Company Gas’s roots date back to 1856 when Atlanta Gas Light was incorporated to provide gas lighting to the city of Atlanta.</p>
 				<a href="/who-we-are">Learn more &#8594;</a>
 			</div>
@@ -68,14 +74,13 @@ $i = 0;
 
   <div class="pattern split">
 		<div class="left">
-			<img src="/assets/img/illos/bus.svg" />
+			<img src="/assets/img/illos/bus-wide.svg" />
 		</div>
 
 		<div class="right">
 			<div class="copy copy--left">
 				<p class="label">Environment</p>
-				<p class="hed hed--large">Everyone deserves energy that is not only clean, but also safe, reliable and affordable. </p>
-				<a href="/environment">Learn more &#8594;</a>
+				<p class="hed hed--medium">Everyone deserves energy that is not only clean, but also safe, reliable and affordable. </p>
 			</div>
 		</div>
 	</div>
@@ -89,7 +94,7 @@ $i = 0;
 	<div href="/community" class="image-break pattern dark" style="background-image:url('https://southerncompanygas.com/wp-content/uploads/2019/10/scgco-what-is-natural-gas.jpg');">
     <div class="dimmer"></div>
     <div class="copy">
-      <p class="hed hed--large">Join our waitlist to know what's coming in Renewable Natural Gas</p>
+      <p class="hed hed--medium">Join our waitlist to know what's coming in Renewable Natural Gas</p>
 			<?php get_template_part( 'templates/mailchimp-form' ); ?>
     </div>
   </div>
@@ -100,7 +105,7 @@ $i = 0;
 
 	<div class="pattern companies">
 		<div class="copy">
-			<h2 class="hed hed--large">A family of companies</h2>
+			<h2 class="hed hed--medium">A family of companies</h2>
 		</div>
 
 		<div class="grid">
@@ -147,8 +152,31 @@ $i = 0;
 		padding:0 !important;
 	}
 
-	#main .fusion-row{
+	#main .fusion-row {
 		max-width: unset;
+	}
+
+	#header {
+		background: none;
+		position: relative;
+		z-index: 1;
+	}
+
+	#header-container {
+		background: none;
+	}
+
+	.navbar ol li a {
+		color: white;
+	}
+
+	#boxed-wrapper {
+		overflow: visible;
+		z-index: 0;
+	}
+
+	.container {
+		padding-top: 0;
 	}
 
 	.pattern.card-group {
@@ -197,43 +225,52 @@ $i = 0;
 
 	.pattern.intro {
 		margin: 0;
+		top: -16rem;
 		width: 100%;
 		display: flex;
+		position: relative;
+		min-height: 40rem;
+		padding-top: 16rem;
+		padding-bottom: 14rem;
 		flex-direction: column;
 		max-width: unset;
-		background-color: white;
-		background-image: url('/environment/img/environment-sustainable-lines.svg');
+		background-color: #00B6EC;
+		background-image: url('/assets/img/illos/home-bg.svg');
 		background-size: cover;
-		background-position: 0% 33%;
+		background-position: center;
 		overflow: hidden;
+	}
+
+	.pattern.intro .copy {
+		max-width: 50rem;
 	}
 
 	.pattern.intro .split {
 		margin: 3rem auto;
 	}
 
-	.pattern.news {
-		background-color: rgba(0,0,0,0.8);
-		padding: 3rem;
-		margin: 0;
+	.news.split {
+		margin-top: -16rem;
+		max-width: unset;
+	}
+
+	.news.split .left {
+		background: #CDCDCD;
+	}
+
+	.news.split .right{
 		justify-content: center;
-	}
-
-	.container {
-		padding-top: 0;
-	}
-
-	.card.card--micro.card--flat .card--featured {
-		border-radius: 3rem;
-	}
-
-	.card.card--micro.card--flat .card--content {
-		background: none;
 	}
 
 	@media (max-width: 900px) {
 		.pattern.intro {
-			padding: 3rem;
+			padding: 16rem 3rem 10rem;
+		}
+
+		.news.split {
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
 		}
 	}
 </style>
