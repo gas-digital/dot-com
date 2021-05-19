@@ -94,6 +94,7 @@ $i = 0;
 			<div class="copy copy--left">
 				<p class="label">Environment</p>
 				<p class="hed hed--medium">Everyone deserves energy that is not only clean, but also safe, reliable and affordable. </p>
+				<a href="/environment">Learn more &#8594;</a>
 			</div>
 		</div>
 	</div>
