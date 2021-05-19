@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $post_params = array('post_type'=>'post',
 										 'post_status'=>'publish',
-										 'posts_per_page'=>3);
+										 'posts_per_page'=>4);
 
 $wpb_all_query = new WP_Query($post_params);
 
@@ -26,21 +26,32 @@ $i = 0;
 
 <div class="split news">
 	<div class="left">
-		<div class="card card--medium">
-			<div class="card--featured">
-				<img src="/wp-content/uploads/2021/02/hyblend-image-scaled.jpg" />
-			</div>
-			<div class="card--content">
-				<p class="hed">Breaking barriers: How we’re working to overcome obstacles</p>
-				<p>American innovation moves at lightning speed. Access to alternative forms of energy is increasing...</p>
-				<a href="/2021/02/11/hyblend/">Learn more &#8594;</a>
-			</div>
-		</div>
+		<?php
+				if ( $wpb_all_query->have_posts() ) :
+		?>
+		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
+				$thumb = get_the_post_thumbnail_url( get_the_ID() ,  "medium");
+				if($i == 0) {
+		?>
+				<a href="<?php the_permalink(); ?>" class="card">
+					<div class="card--featured">
+						<img src="<?= $thumb ?>" />
+					</div>
+					<div class="card--content">
+						<p class="label">News</p>
+						<p class="hed"><?php the_title(); ?></p>
+					</div>
+				</a>
+		<?php
+				}
+				$i = 1;
+				endwhile;
+		?>
 	</div>
 	<div class="right">
-			<?php if ( $wpb_all_query->have_posts() ) : ?>
 			<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
 					$thumb = get_the_post_thumbnail_url( get_the_ID() ,  "small");
+					if($i > 0) {
 			?>
 					<a href="<?php the_permalink(); ?>" class="card card--flat card--micro">
 						<div class="card--featured" style="background-image:url('<?= $thumb ?>')">
@@ -52,6 +63,8 @@ $i = 0;
 						</div>
 					</a>
 			<?php
+					}
+					$i++;
 					endwhile;
 			?>
 	</div>
