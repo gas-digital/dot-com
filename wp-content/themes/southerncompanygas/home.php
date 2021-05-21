@@ -31,6 +31,7 @@ $i = 0;
 		?>
 		<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
 				$thumb = get_the_post_thumbnail_url( get_the_ID() ,  "medium");
+
 				if($i == 0) {
 		?>
 				<a href="<?php the_permalink(); ?>" class="card">
@@ -249,7 +250,7 @@ $i = 0;
 		flex-direction: column;
 		max-width: unset;
 		background-color: #00B6EC;
-		background-image: url('/assets/img/illos/home-bg.svg');
+		background-image: url('/assets/img/illos/home-bg.jpg');
 		background-size: cover;
 		background-position: center;
 		overflow: hidden;
