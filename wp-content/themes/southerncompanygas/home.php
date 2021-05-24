@@ -193,10 +193,6 @@ $i = 0;
 		color: white;
 	}
 
-	.navbar ol li a {
-		color: grey;
-	}
-
 	#boxed-wrapper {
 		overflow: visible;
 		position: relative;
@@ -293,6 +289,10 @@ $i = 0;
 	@media (max-width: 900px) {
 		.pattern.intro {
 			padding: 16rem 3rem 10rem;
+		}
+
+		.navbar ol li a {
+			color: grey;
 		}
 
 		.news.split {
