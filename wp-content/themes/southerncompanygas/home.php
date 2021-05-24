@@ -52,7 +52,7 @@ $i = 0;
 	<div class="right">
 			<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
 					$thumb = get_the_post_thumbnail_url( get_the_ID() ,  "small");
-					if($i > 0) {
+					if($i > 1) {
 			?>
 					<a href="<?php the_permalink(); ?>" class="card card--flat card--micro">
 						<div class="card--featured" style="background-image:url('<?= $thumb ?>')">
@@ -171,6 +171,14 @@ $i = 0;
 		max-width: unset;
 	}
 
+	.ham {
+		border: 3px solid white;
+	}
+
+	.ham div {
+		background-color: white;
+	}
+
 	#header {
 		background: none;
 		position: relative;
@@ -185,8 +193,13 @@ $i = 0;
 		color: white;
 	}
 
+	.navbar ol li a {
+		color: grey;
+	}
+
 	#boxed-wrapper {
 		overflow: visible;
+		position: relative;
 		z-index: 0;
 	}
 
