@@ -50,7 +50,7 @@ ul li { margin-bottom: 1rem; }
 
 #footer-links ul .hed { font-family: 'Montserrat'; letter-spacing: .01rem; font-size: 1.6rem; font-weight: 600; color: #626262; margin-bottom: 1rem; }
 
-#footer-links ul li a { color: #626262; font-size: 1.6rem; line-height: 3.2rem; text-decoration: underline; }
+#footer-links ul li a { color: #626262; font-size: 1.6rem; line-height: 3.2rem; text-decoration: underline; padding-right: 0; }
 
 #footer-info { display: flex; background: black; justify-content: center; padding: 3rem 0; }
 
